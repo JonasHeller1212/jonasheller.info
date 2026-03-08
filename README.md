@@ -1,12 +1,10 @@
-# jonasheller.info
+# Dr. Jonas Heller
 
-Personal website for Jonas Heller — Keynote Speaker, AI & AR/VR Coach, and Assistant Professor at Maastricht University.
+Personal website for Dr. Jonas Heller — Researcher, Consultant, Speaker at Maastricht University.
 
-## Preview
+## Live Site
 
-[View on GitHub](https://github.com/JonasHeller1212/jonasheller.info/tree/claude/design-personal-website-k7MyS)
-
-Once deployed, the site will be live at [www.jonasheller.info](https://www.jonasheller.info)
+[https://jonasheller1212.github.io/jonasheller.info](https://jonasheller1212.github.io/jonasheller.info)
 
 ## Setup
 
@@ -15,6 +13,5 @@ No build tools required. Pure HTML/CSS/JS — just open `index.html` or deploy t
 ### GitHub Pages Deployment
 
 1. Set the default branch to `main`
-2. Go to **Settings → Pages → Source** and select **GitHub Actions**
+2. Go to **Settings > Pages > Source** and select **GitHub Actions**
 3. The included workflow (`.github/workflows/deploy.yml`) will auto-deploy on every push to `main`
-4. Custom domain `www.jonasheller.info` is configured via the `CNAME` file

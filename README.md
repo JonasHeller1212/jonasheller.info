@@ -2,9 +2,11 @@
 
 Personal website for Jonas Heller — Keynote Speaker, AI & AR/VR Coach, and Assistant Professor at Maastricht University.
 
-## Live Site
+## Preview
 
-[www.jonasheller.info](https://www.jonasheller.info)
+[View on GitHub](https://github.com/JonasHeller1212/jonasheller.info/tree/claude/design-personal-website-k7MyS)
+
+Once deployed, the site will be live at [www.jonasheller.info](https://www.jonasheller.info)
 
 ## Setup
 

@@ -129,6 +129,12 @@ img { max-width: 100%; display: block; }
 .research { background: var(--bg); }
 .research-keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
 .research-keywords span { font-size: 0.73rem; padding: 5px 14px; border-radius: 100px; border: 1px solid var(--border); color: var(--text-muted); font-weight: 500; }
+.research-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); margin-bottom: 36px; }
+.stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; transition: border-color 0.3s; }
+.stat-card:hover { border-color: var(--accent); }
+.stat-number { display: block; font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; color: var(--accent); line-height: 1.2; }
+.stat-label { display: block; font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
+.pub-section-heading { font-family: var(--font-display); font-size: 0.88rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
 .pub-list { display: flex; flex-direction: column; }
 .pub-item { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--border); transition: padding-left 0.3s; }
 .pub-item:first-child { border-top: 1px solid var(--border); }
@@ -141,10 +147,7 @@ img { max-width: 100%; display: block; }
 .pub-doi:hover { background: var(--accent); color: white; }
 .pub-thesis { background: var(--accent-bg); border-radius: 8px; padding: 20px; border: none; margin-top: 8px; }
 .pub-thesis .pub-journal { color: var(--accent); font-weight: 500; }
-.pub-hidden { max-height: 0; overflow: hidden; transition: max-height 0.5s var(--ease); }
-.pub-hidden.show { max-height: 2000px; }
-.pub-toggle { margin-top: 16px; align-self: center; }
-.pub-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 40px; }
+.pub-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
 
 /* --- Speaking --- */
 .speaking { background: var(--bg-elevated); }

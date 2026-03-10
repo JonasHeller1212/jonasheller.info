@@ -273,11 +273,11 @@ export default function CVPage() {
             >
               <span>Maastricht, NL</span>
               <a
-                href="mailto:jonasheller89@gmail.com"
+                href="#contact"
                 className="hover:opacity-70 transition-opacity"
                 style={{ color: "var(--color-accent)" }}
               >
-                jonasheller89@gmail.com
+                Contact Form
               </a>
               <a
                 href="https://www.linkedin.com/in/hellerjonas/"

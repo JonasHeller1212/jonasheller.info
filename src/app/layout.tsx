@@ -40,6 +40,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Jonas Heller", url: siteUrl }],
   creator: "Jonas Heller",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
   alternates: {
     canonical: "/",
   },

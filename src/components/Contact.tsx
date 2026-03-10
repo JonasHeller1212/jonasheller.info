@@ -1,35 +1,13 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import MagneticButton from "./MagneticButton";
 
 export default function Contact() {
   const { ref, isVisible } = useScrollAnimation(0.1);
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
-
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setStatus("sending");
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    try {
-      const res = await fetch("https://formspree.io/f/mgonaray", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
-      if (res.ok) {
-        setStatus("sent");
-        form.reset();
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
-  }
+  const [state, handleSubmit] = useForm("mgonaray");
 
   return (
     <section id="contact" className="py-24 px-6">
@@ -66,7 +44,7 @@ export default function Contact() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="glass-card rounded-2xl p-8 sm:p-12"
         >
-          {status === "sent" ? (
+          {state.succeeded ? (
             <div className="text-center py-8">
               <p
                 className="text-lg font-semibold mb-2"
@@ -77,13 +55,6 @@ export default function Contact() {
               <p style={{ color: "var(--color-text-secondary)" }}>
                 Your message has been sent. I&apos;ll get back to you soon.
               </p>
-              <button
-                className="mt-4 text-sm hover:opacity-70 transition-opacity"
-                style={{ color: "var(--color-accent)" }}
-                onClick={() => setStatus("idle")}
-              >
-                Send another message
-              </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -110,6 +81,7 @@ export default function Contact() {
                     }}
                     placeholder="Your name"
                   />
+                  <ValidationError prefix="Name" field="name" errors={state.errors} />
                 </div>
                 <div>
                   <label
@@ -131,6 +103,7 @@ export default function Contact() {
                     }}
                     placeholder="your@email.com"
                   />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
               </div>
 
@@ -154,9 +127,10 @@ export default function Contact() {
                   }}
                   placeholder="Your message..."
                 />
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
 
-              {status === "error" && (
+              {state.errors && (
                 <p className="text-sm text-center" style={{ color: "#ef4444" }}>
                   Something went wrong. Please try again.
                 </p>
@@ -166,7 +140,7 @@ export default function Contact() {
                 <MagneticButton
                   className="px-8 py-3 rounded-full text-sm font-semibold text-white transition-colors"
                 >
-                  {status === "sending" ? "Sending..." : "Send Message"}
+                  {state.submitting ? "Sending..." : "Send Message"}
                 </MagneticButton>
               </div>
             </form>

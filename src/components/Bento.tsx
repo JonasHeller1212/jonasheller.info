@@ -43,7 +43,7 @@ const highlights = [
   {
     area: "f",
     title: "30+ Publications",
-    description: "Published in top journals including Journal of Retailing, Journal of Service Research, and Computers in Human Behavior.",
+    description: "Published in journals including Journal of Retailing, Journal of Service Research, and Computers in Human Behavior.",
   },
   {
     area: "g",

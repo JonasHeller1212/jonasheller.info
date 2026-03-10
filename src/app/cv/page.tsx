@@ -25,7 +25,7 @@ const experience = [
     title: "Scientific Researcher",
     org: "Jimdo (remote)",
     detail:
-      "Leading research collaborations with academic institutes & quantitative data collection & analysis for thought leadership",
+      "Research collaborations with academic institutes & quantitative data collection & analysis",
   },
   {
     period: "Oct 2019 – Oct 2020",
@@ -84,8 +84,8 @@ const education = [
 ];
 
 const awards = [
-  { year: "2024", title: "SBE Junior Researcher Award", detail: "Best junior researcher (up to 5 years post-PhD) at the faculty" },
-  { year: "2022", title: "SBE Team Science Award", detail: "Outstanding team science for research group 'AugmentedReseARch'" },
+  { year: "2024", title: "SBE Junior Researcher Award", detail: "Awarded to one junior researcher (up to 5 years post-PhD) at the faculty" },
+  { year: "2022", title: "SBE Team Science Award", detail: "Awarded for research group 'AugmentedReseARch'" },
   { year: "2020", title: "Dean's Award for Outstanding Dissertations, UNSW", detail: "Top 10% dissertation with non to minimal revisions" },
   { year: "2020", title: "SERVSIG Dissertation Award Finalist" },
   { year: "2018", title: "ANZMAC Best Paper Award" },

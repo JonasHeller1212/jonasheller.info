@@ -24,6 +24,10 @@ const topics = [
     title: "Digital Transformation & Customer Experience",
     description: "Leveraging emerging technologies for meaningful customer engagement.",
   },
+  {
+    title: "The Open Academic: Transparency in Research",
+    description: "How open science, open data, and transparent practices make academia better for everyone.",
+  },
 ];
 
 export default function Speaking() {

@@ -15,6 +15,15 @@ interface Paper {
 }
 
 const papers: Paper[] = [
+  // 2026
+  {
+    id: "bos2026",
+    title: "Perspective-taking and meaning-making among public policy professionals experiencing an immersive poverty narrative",
+    authors: "Bos, S. G., Brüggen, L., van der Werf, M., & Heller, J.",
+    year: 2026,
+    venue: "Forthcoming",
+    url: "https://scholar.google.com/citations?user=NOSPtp8AAAAJ",
+  },
   {
     id: "glebova2026",
     title: "Immersive environments",
@@ -23,6 +32,7 @@ const papers: Paper[] = [
     venue: "International Encyclopedia of Business Management, Elsevier",
     url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
   },
+  // 2025
   {
     id: "barrett2025",
     title: "Customer engagement in utilitarian vs. hedonic service contexts",
@@ -30,22 +40,6 @@ const papers: Paper[] = [
     year: 2025,
     venue: "Journal of Service Research",
     url: "https://doi.org/10.1177/10946705241242901",
-  },
-  {
-    id: "herold2025",
-    title: "Brave new procurement deals: An experimental study of how generative artificial intelligence reshapes buyer–supplier negotiations",
-    authors: "Herold, S., Heller, J., Rozemeijer, F., & Mahr, D.",
-    year: 2025,
-    venue: "Journal of Purchasing and Supply Management",
-    url: "https://doi.org/10.1016/j.pursup.2025.101012",
-  },
-  {
-    id: "dong2025",
-    title: "Does using augmented reality in online shopping affect post-purchase product perceptions? A mixed design using machine-learning based sentiment analysis, lab experiments, and focus groups",
-    authors: "Dong, X., Hu, C., Heller, J., & Deng, N.",
-    year: 2025,
-    venue: "International Journal of Information Management",
-    url: "https://doi.org/10.1016/j.ijinfomgt.2024.102872",
   },
   {
     id: "dipalma2025",
@@ -56,12 +50,12 @@ const papers: Paper[] = [
     url: "https://doi.org/10.1111/jcal.70097",
   },
   {
-    id: "becker2025",
-    title: "Introducing Researchchatai: An easy-to-use, open-source tool to build conversational AI agents for management and leadership research",
-    authors: "Becker, M., de Jong, D., Briker, R., Heller, J., & Grewal, D.",
+    id: "dong2025",
+    title: "Does using augmented reality in online shopping affect post-purchase product perceptions? A mixed design using machine-learning based sentiment analysis, lab experiments, and focus groups",
+    authors: "Dong, X., Hu, C., Heller, J., & Deng, N.",
     year: 2025,
-    venue: "Preprint",
-    url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
+    venue: "International Journal of Information Management",
+    url: "https://doi.org/10.1016/j.ijinfomgt.2024.102872",
   },
   {
     id: "mahr2025",
@@ -71,6 +65,23 @@ const papers: Paper[] = [
     venue: "SEM Policy Brief Collection, Maastricht University Press",
     url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
   },
+  {
+    id: "herold2025",
+    title: "Brave new procurement deals: An experimental study of how generative artificial intelligence reshapes buyer–supplier negotiations",
+    authors: "Herold, S., Heller, J., Rozemeijer, F., & Mahr, D.",
+    year: 2025,
+    venue: "Journal of Purchasing and Supply Management",
+    url: "https://doi.org/10.1016/j.pursup.2025.101012",
+  },
+  {
+    id: "becker2025",
+    title: "Introducing Researchchatai: An easy-to-use, open-source tool to build conversational AI agents for management and leadership research",
+    authors: "Becker, M., de Jong, D., Briker, R., Mennens, K., Heller, J., Mahr, D., & Grewal, D.",
+    year: 2025,
+    venue: "Preprint",
+    url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
+  },
+  // 2024
   {
     id: "windhausen2024",
     title: "Exploring the impact of augmented reality smart glasses on worker well-being in warehouse order picking",
@@ -90,7 +101,7 @@ const papers: Paper[] = [
   {
     id: "moonen2024",
     title: "Immersion or social presence? Investigating the effect of virtual reality immersive environments on sommelier learning experiences",
-    authors: "Moonen, N., Heller, J., Hilken, T., Han, D. I., & Mahr, D.",
+    authors: "Moonen, N., Heller, J., Hilken, T., Danny Han, D. I., & Mahr, D.",
     year: 2024,
     venue: "Journal of Wine Research",
     url: "https://doi.org/10.1080/09571264.2024.2345678",
@@ -103,13 +114,54 @@ const papers: Paper[] = [
     venue: "Netspar",
     url: "https://www.netspar.nl/en/",
   },
+  // 2023
   {
-    id: "ciuchita2023",
-    title: "It is really not a game: An integrative review of gamification for service research",
-    authors: "Ciuchita, R., Heller, J., Köcher, S., Leclercq, T., Sidaoui, K., & Stead, S.",
+    id: "glebova2023",
+    title: "Sports venue digital twin technology from a spectator virtual visiting perspective",
+    authors: "Glebova, E., Book, R., Su, Y., Perić, M., & Heller, J.",
     year: 2023,
-    venue: "Journal of Service Research",
-    url: "https://doi.org/10.1177/10946705221076272",
+    venue: "Frontiers in Sports and Active Living",
+    url: "https://doi.org/10.3389/fspor.2023.1289140",
+  },
+  {
+    id: "hilken2023",
+    title: "Closing the customer imagination gap with augmented and virtual reality",
+    authors: "Hilken, T., Heller, J., & Mahr, D.",
+    year: 2023,
+    venue: "NIM Marketing Intelligence Review",
+    url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
+  },
+  {
+    id: "mahr2023a",
+    title: "Die Innovation synthetischer Kundenerlebnisse: Machen ist wichtiger als Denken",
+    authors: "Mahr, D., Heller, J., Hilken, T., & Wigger, M.",
+    year: 2023,
+    venue: "Transfer: Zeitschrift für Kommunikation und Markenmanagement",
+    url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
+  },
+  {
+    id: "pfeifer2023",
+    title: "More than meets the eye: In-store retail experiences with augmented reality smart glasses",
+    authors: "Pfeifer, P., Hilken, T., Heller, J., Alimamy, S., & Di Palma, R.",
+    year: 2023,
+    venue: "Computers in Human Behavior",
+    url: "https://doi.org/10.1016/j.chb.2023.107816",
+  },
+  {
+    id: "mahr2023b",
+    title: "Augmented reality (AR): The blurring of reality in human-computer interaction",
+    authors: "Mahr, D., Heller, J., & de Ruyter, K.",
+    year: 2023,
+    venue: "Book Chapter",
+    url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
+  },
+  {
+    id: "herold2023",
+    title: "Dynamic capabilities for digital procurement transformation: A systematic literature review",
+    authors: "Herold, S., Heller, J., Rozemeijer, F., & Mahr, D.",
+    year: 2023,
+    venue: "International Journal of Physical Distribution & Logistics Management",
+    url: "https://doi.org/10.1108/IJPDLM-07-2022-0223",
   },
   {
     id: "heller2023",
@@ -120,12 +172,29 @@ const papers: Paper[] = [
     url: "https://doi.org/10.1016/j.chb.2023.107681",
   },
   {
-    id: "glebova2023",
-    title: "Sports venue digital twin technology from a spectator virtual visiting perspective",
-    authors: "Glebova, E., Book, R., Su, Y., Perić, M., & Heller, J.",
+    id: "ciuchita2023",
+    title: "It is really not a game: An integrative review of gamification for service research",
+    authors: "Ciuchita, R., Heller, J., Köcher, S., Leclercq, T., Sidaoui, K., & Stead, S.",
     year: 2023,
-    venue: "Frontiers in Sports and Active Living",
-    url: "https://doi.org/10.3389/fspor.2023.1289140",
+    venue: "Journal of Service Research",
+    url: "https://doi.org/10.1177/10946705221076272",
+  },
+  {
+    id: "chylinski2022",
+    title: "The customer loyalty journey: Technology-enabled loyalty touchpoints",
+    authors: "Chylinski, M. & Heller, J.",
+    year: 2022,
+    venue: "Handbook of Research on Customer Loyalty",
+    url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
+  },
+  // 2022
+  {
+    id: "hilken2022c",
+    title: "Exploring the frontiers in reality-enhanced service communication: From augmented and virtual reality to neuro-enhanced reality",
+    authors: "Hilken, T., Chylinski, M., de Ruyter, K., Heller, J., & Keeling, D. I.",
+    year: 2022,
+    venue: "Journal of Service Management",
+    url: "https://doi.org/10.1108/JOSM-11-2021-0439",
   },
   {
     id: "golfpapez2022",
@@ -136,11 +205,19 @@ const papers: Paper[] = [
     url: "https://doi.org/10.1016/j.bushor.2022.08.007",
   },
   {
+    id: "hilken2022d",
+    title: "Disrupting marketing realities: A research agenda for investigating the psychological mechanisms of next-generation experiences with reality-enhancing technologies",
+    authors: "Hilken, T., Keeling, D. I., Chylinski, M., de Ruyter, K., Heller, J., Mahr, D., & Rauschnabel, P. A.",
+    year: 2022,
+    venue: "Psychology & Marketing",
+    url: "https://doi.org/10.1002/mar.21678",
+  },
+  {
     id: "hilken2022a",
     title: "Bridging imagination gaps on the path to purchase with augmented reality: Field and experimental evidence",
     authors: "Hilken, T., Heller, J., Keeling, D. I., Chylinski, M., Mahr, D., & de Ruyter, K.",
     year: 2022,
-    venue: "Journal of Consumer Psychology",
+    venue: "Journal of Interactive Marketing",
     url: "https://doi.org/10.1177/10949968221083555",
   },
   {
@@ -151,22 +228,7 @@ const papers: Paper[] = [
     venue: "Psychology & Marketing",
     url: "https://doi.org/10.1002/mar.21600",
   },
-  {
-    id: "hilken2022c",
-    title: "Exploring the frontiers in reality-enhanced service communication: From augmented and virtual reality to neuro-enhanced reality",
-    authors: "Hilken, T., Chylinski, M., de Ruyter, K., Heller, J., & Keeling, D. I.",
-    year: 2022,
-    venue: "Journal of Service Management",
-    url: "https://doi.org/10.1108/JOSM-11-2021-0439",
-  },
-  {
-    id: "heller2021",
-    title: "Tangible service automation: Decomposing the technology-enabled engagement process (TEEP) for augmented reality",
-    authors: "Heller, J., Chylinski, M., de Ruyter, K., Keeling, D. I., Hilken, T., & Mahr, D.",
-    year: 2021,
-    venue: "Journal of Service Research",
-    url: "https://doi.org/10.1177/1094670520933692",
-  },
+  // 2021
   {
     id: "lammerding2021",
     title: "Too real for comfort: Measuring consumers' augmented reality information privacy concerns",
@@ -176,20 +238,21 @@ const papers: Paper[] = [
     url: "https://doi.org/10.1007/978-3-030-68086-2_8",
   },
   {
+    id: "heller2021",
+    title: "Tangible service automation: Decomposing the technology-enabled engagement process (TEEP) for augmented reality",
+    authors: "Heller, J., Chylinski, M., de Ruyter, K., Keeling, D. I., Hilken, T., & Mahr, D.",
+    year: 2021,
+    venue: "Journal of Service Research",
+    url: "https://doi.org/10.1177/1094670520933692",
+  },
+  // 2020
+  {
     id: "chylinski2020",
     title: "Augmented reality marketing: A technology-enabled approach to situated customer experience",
     authors: "Chylinski, M., Heller, J., Hilken, T., Keeling, D. I., Mahr, D., & de Ruyter, K.",
     year: 2020,
     venue: "Australasian Marketing Journal",
     url: "https://doi.org/10.1016/j.ausmj.2020.04.004",
-  },
-  {
-    id: "deruyter2020",
-    title: "Seeing with the customer's eye: Exploring the challenges and opportunities of AR advertising",
-    authors: "de Ruyter, K., Heller, J., Hilken, T., Chylinski, M., Keeling, D. I., & Mahr, D.",
-    year: 2020,
-    venue: "Journal of Advertising",
-    url: "https://doi.org/10.1080/00913367.2020.1740123",
   },
   {
     id: "jessen2020",
@@ -200,13 +263,22 @@ const papers: Paper[] = [
     url: "https://doi.org/10.1016/j.jbusres.2020.05.002",
   },
   {
-    id: "heller2019a",
-    title: "Let me imagine that for you: Transforming the retail frontline through augmenting customer mental imagery ability",
-    authors: "Heller, J., Chylinski, M., de Ruyter, K., Mahr, D., & Keeling, D. I.",
-    year: 2019,
-    venue: "Journal of Retailing",
-    url: "https://doi.org/10.1016/j.jretai.2019.03.005",
+    id: "vanesch2020",
+    title: "The moderating influence of country of origin information seeking on homophily and product satisfaction",
+    authors: "Van Esch, P., Northey, G., Duffy, S., Heller, J., & Striluk, M.",
+    year: 2020,
+    venue: "Country of Origin Effect, Springer",
+    url: "https://doi.org/10.1007/978-3-030-34800-7_3",
   },
+  {
+    id: "deruyter2020",
+    title: "Seeing with the customer's eye: Exploring the challenges and opportunities of AR advertising",
+    authors: "de Ruyter, K., Heller, J., Hilken, T., Chylinski, M., Keeling, D. I., & Mahr, D.",
+    year: 2020,
+    venue: "Journal of Advertising",
+    url: "https://doi.org/10.1080/00913367.2020.1740123",
+  },
+  // 2019
   {
     id: "heller2019b",
     title: "Touching the untouchable: Exploring multi-sensory augmented reality in the context of online retailing",
@@ -214,6 +286,22 @@ const papers: Paper[] = [
     year: 2019,
     venue: "Journal of Retailing",
     url: "https://doi.org/10.1016/j.jretai.2019.10.008",
+  },
+  {
+    id: "vanesch2019a",
+    title: "The effects of inner packaging color on the desirability of food",
+    authors: "Van Esch, P., Heller, J., & Northey, G.",
+    year: 2019,
+    venue: "Journal of Retailing and Consumer Services",
+    url: "https://doi.org/10.1016/j.jretconser.2019.03.008",
+  },
+  {
+    id: "vanesch2019b",
+    title: "ExerStart: Helping seniors be active and independent for less",
+    authors: "Van Esch, P., Duffy, S. M., Teufel, J., Northey, G., Elder, E., Frethey-Bentham, C., & Heller, J.",
+    year: 2019,
+    venue: "Journal of Social Marketing",
+    url: "https://doi.org/10.1108/JSOCM-11-2017-0077",
   },
   {
     id: "carrozzi2019",
@@ -224,28 +312,21 @@ const papers: Paper[] = [
     url: "https://doi.org/10.1016/j.intmar.2019.05.004",
   },
   {
+    id: "heller2019a",
+    title: "Let me imagine that for you: Transforming the retail frontline through augmenting customer mental imagery ability",
+    authors: "Heller, J., Chylinski, M., de Ruyter, K., Mahr, D., & Keeling, D. I.",
+    year: 2019,
+    venue: "Journal of Retailing",
+    url: "https://doi.org/10.1016/j.jretai.2019.03.005",
+  },
+  // 2018
+  {
     id: "hilken2018",
     title: "Making omnichannel an augmented reality: The current and future state of the art",
     authors: "Hilken, T., Heller, J., Chylinski, M., Keeling, D. I., Mahr, D., & de Ruyter, K.",
     year: 2018,
     venue: "Journal of Research in Interactive Marketing",
     url: "https://doi.org/10.1108/JRIM-01-2018-0023",
-  },
-  {
-    id: "vanesch2018",
-    title: "The moderating influence of country of origin information seeking on homophily and product satisfaction",
-    authors: "Van Esch, P., Northey, G., Duffy, S., Heller, J., & Striluk, M.",
-    year: 2018,
-    venue: "Journal of Promotion Management",
-    url: "https://doi.org/10.1080/10496491.2018.1378307",
-  },
-  {
-    id: "heller2017",
-    title: "Augmented shopping in a socially situated context: The role of augmentation on purchase decision satisfaction in an online shopping environment",
-    authors: "Heller, J., de Ruyter, K., & Chylinski, M.",
-    year: 2017,
-    venue: "ANZMAC Conference",
-    url: "https://cris.maastrichtuniversity.nl/en/publications/augmented-shopping-in-a-socially-situated-context-the-role-of-aug",
   },
 ];
 

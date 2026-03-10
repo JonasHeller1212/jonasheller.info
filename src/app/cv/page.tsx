@@ -25,7 +25,7 @@ const experience = [
     title: "Scientific Researcher",
     org: "Jimdo (remote)",
     detail:
-      "Leading research collaborations with academic institutes & quantitative data collection & analysis for thought leadership",
+      "Research collaborations with academic institutes & quantitative data collection & analysis",
   },
   {
     period: "Oct 2019 – Oct 2020",

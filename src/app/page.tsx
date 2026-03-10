@@ -10,15 +10,13 @@ import Speaking from "@/components/Speaking";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
-// Load cursor and smooth scroll only on client, skip on touch devices
-const CursorTrail = dynamic(() => import("@/components/CursorTrail"), { ssr: false });
+// Load smooth scroll only on client, skip on touch devices
 const SmoothScroll = dynamic(() => import("@/components/SmoothScroll"), { ssr: false });
 
 export default function Home() {
   return (
     <>
       <SmoothScroll />
-      <CursorTrail />
       <Nav />
       <main className="font-[family-name:var(--font-geist-sans)]">
         <Hero />

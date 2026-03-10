@@ -42,16 +42,6 @@
   --color-hero-gradient-end: #1a1a2e;
 }
 
-* {
-  cursor: none !important;
-}
-
-@media (pointer: coarse) {
-  * {
-    cursor: auto !important;
-  }
-}
-
 html {
   scroll-behavior: auto;
 }

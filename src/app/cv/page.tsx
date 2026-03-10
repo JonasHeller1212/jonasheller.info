@@ -84,8 +84,8 @@ const education = [
 ];
 
 const awards = [
-  { year: "2024", title: "SBE Junior Researcher Award", detail: "Awarded to one junior researcher (up to 5 years post-PhD) at the faculty" },
-  { year: "2022", title: "SBE Team Science Award", detail: "Awarded for research group 'AugmentedReseARch'" },
+  { year: "2024", title: "SBE Junior Researcher Award", detail: "Best junior researcher (up to 5 years post-PhD) at the faculty" },
+  { year: "2022", title: "SBE Team Science Award", detail: "Outstanding team science for research group 'AugmentedReseARch'" },
   { year: "2020", title: "Dean's Award for Outstanding Dissertations, UNSW", detail: "Top 10% dissertation with non to minimal revisions" },
   { year: "2020", title: "SERVSIG Dissertation Award Finalist" },
   { year: "2018", title: "ANZMAC Best Paper Award" },
@@ -272,6 +272,13 @@ export default function CVPage() {
               style={{ color: "var(--color-text-secondary)" }}
             >
               <span>Maastricht, NL</span>
+              <a
+                href="mailto:jonasheller89@gmail.com"
+                className="hover:opacity-70 transition-opacity"
+                style={{ color: "var(--color-accent)" }}
+              >
+                jonasheller89@gmail.com
+              </a>
               <a
                 href="https://www.linkedin.com/in/hellerjonas/"
                 target="_blank"

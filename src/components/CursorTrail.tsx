@@ -9,8 +9,8 @@ export default function CursorTrail() {
   const dotX = useMotionValue(0);
   const dotY = useMotionValue(0);
 
-  const ringX = useSpring(dotX, { stiffness: 150, damping: 15, mass: 0.5 });
-  const ringY = useSpring(dotY, { stiffness: 150, damping: 15, mass: 0.5 });
+  const ringX = useSpring(dotX, { stiffness: 500, damping: 30, mass: 0.2 });
+  const ringY = useSpring(dotY, { stiffness: 500, damping: 30, mass: 0.2 });
 
   const isTouchDevice = useRef(false);
 

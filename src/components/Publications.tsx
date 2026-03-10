@@ -16,6 +16,22 @@ interface Paper {
 
 const papers: Paper[] = [
   {
+    id: "glebova2026",
+    title: "Immersive environments",
+    authors: "Glebova, E. & Heller, J.",
+    year: 2026,
+    venue: "International Encyclopedia of Business Management, Elsevier",
+    url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
+  },
+  {
+    id: "barrett2025",
+    title: "Customer engagement in utilitarian vs. hedonic service contexts",
+    authors: "Barrett, J. A. M., Jaakkola, E., Heller, J., & Brüggen, E. C.",
+    year: 2025,
+    venue: "Journal of Service Research",
+    url: "https://doi.org/10.1177/10946705241242901",
+  },
+  {
     id: "herold2025",
     title: "Brave new procurement deals: An experimental study of how generative artificial intelligence reshapes buyer–supplier negotiations",
     authors: "Herold, S., Heller, J., Rozemeijer, F., & Mahr, D.",
@@ -40,11 +56,19 @@ const papers: Paper[] = [
     url: "https://doi.org/10.1111/jcal.70097",
   },
   {
+    id: "becker2025",
+    title: "Introducing Researchchatai: An easy-to-use, open-source tool to build conversational AI agents for management and leadership research",
+    authors: "Becker, M., de Jong, D., Briker, R., Heller, J., & Grewal, D.",
+    year: 2025,
+    venue: "Preprint",
+    url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
+  },
+  {
     id: "mahr2025",
     title: "Immersion and regulation: Extended reality technologies, their impact on innovation and policy recommendations",
     authors: "Mahr, D., Heller, J., & Hilken, T.",
     year: 2025,
-    venue: "Policy Chapter",
+    venue: "SEM Policy Brief Collection, Maastricht University Press",
     url: "https://cris.maastrichtuniversity.nl/en/persons/jonas-heller",
   },
   {
@@ -72,12 +96,36 @@ const papers: Paper[] = [
     url: "https://doi.org/10.1080/09571264.2024.2345678",
   },
   {
+    id: "werf2024",
+    title: "Challenges of automated financial advice: Definition and ethical considerations",
+    authors: "van der Werf, M., Meacham, D., Brüggen, E., Hogreve, J., Heller, J., Gianni, R., & Post, T.",
+    year: 2024,
+    venue: "Netspar",
+    url: "https://www.netspar.nl/en/",
+  },
+  {
     id: "ciuchita2023",
     title: "It is really not a game: An integrative review of gamification for service research",
     authors: "Ciuchita, R., Heller, J., Köcher, S., Leclercq, T., Sidaoui, K., & Stead, S.",
     year: 2023,
     venue: "Journal of Service Research",
     url: "https://doi.org/10.1177/10946705221076272",
+  },
+  {
+    id: "heller2023",
+    title: "An interdisciplinary co-authorship networking perspective on AR and human behavior: Taking stock and moving ahead",
+    authors: "Heller, J., Mahr, D., de Ruyter, K., Schaap, E., Hilken, T., Keeling, D. I., Chylinski, M., Flavián, C., Jung, T., & Rauschnabel, P. A.",
+    year: 2023,
+    venue: "Computers in Human Behavior",
+    url: "https://doi.org/10.1016/j.chb.2023.107681",
+  },
+  {
+    id: "glebova2023",
+    title: "Sports venue digital twin technology from a spectator virtual visiting perspective",
+    authors: "Glebova, E., Book, R., Su, Y., Perić, M., & Heller, J.",
+    year: 2023,
+    venue: "Frontiers in Sports and Active Living",
+    url: "https://doi.org/10.3389/fspor.2023.1289140",
   },
   {
     id: "golfpapez2022",
@@ -118,6 +166,14 @@ const papers: Paper[] = [
     year: 2021,
     venue: "Journal of Service Research",
     url: "https://doi.org/10.1177/1094670520933692",
+  },
+  {
+    id: "lammerding2021",
+    title: "Too real for comfort: Measuring consumers' augmented reality information privacy concerns",
+    authors: "Lammerding, L., Hilken, T., Mahr, D., & Heller, J.",
+    year: 2021,
+    venue: "Augmented Reality and Virtual Reality, Springer",
+    url: "https://doi.org/10.1007/978-3-030-68086-2_8",
   },
   {
     id: "chylinski2020",
@@ -174,6 +230,22 @@ const papers: Paper[] = [
     year: 2018,
     venue: "Journal of Research in Interactive Marketing",
     url: "https://doi.org/10.1108/JRIM-01-2018-0023",
+  },
+  {
+    id: "vanesch2018",
+    title: "The moderating influence of country of origin information seeking on homophily and product satisfaction",
+    authors: "Van Esch, P., Northey, G., Duffy, S., Heller, J., & Striluk, M.",
+    year: 2018,
+    venue: "Journal of Promotion Management",
+    url: "https://doi.org/10.1080/10496491.2018.1378307",
+  },
+  {
+    id: "heller2017",
+    title: "Augmented shopping in a socially situated context: The role of augmentation on purchase decision satisfaction in an online shopping environment",
+    authors: "Heller, J., de Ruyter, K., & Chylinski, M.",
+    year: 2017,
+    venue: "ANZMAC Conference",
+    url: "https://cris.maastrichtuniversity.nl/en/publications/augmented-shopping-in-a-socially-situated-context-the-role-of-aug",
   },
 ];
 

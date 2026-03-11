@@ -4,32 +4,7 @@ import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useI18n } from "@/lib/i18n";
 
-const topics = [
-  {
-    title: "AR & VR in Business and Retail",
-    description: "How immersive technologies are transforming customer experiences and frontline services.",
-  },
-  {
-    title: "AI's Impact on Consumers and Organizations",
-    description: "Data-driven marketing and the role of artificial intelligence in business decision-making.",
-  },
-  {
-    title: "Brain-Computer Interfaces: The Next Frontier",
-    description: "Exploring the intersection of neuroscience and consumer research.",
-  },
-  {
-    title: "The Future of Immersive Work and the Metaverse",
-    description: "What XR technologies mean for remote collaboration, education, and innovation.",
-  },
-  {
-    title: "Digital Transformation & Customer Experience",
-    description: "Leveraging emerging technologies for meaningful customer engagement.",
-  },
-  {
-    title: "The Open Academic: Transparency in Research",
-    description: "How open science, open data, and transparent practices make academia better for everyone.",
-  },
-];
+const topicKeys = [0, 1, 2, 3, 4, 5];
 
 export default function Speaking() {
   const { ref, isVisible } = useScrollAnimation(0.1);
@@ -67,7 +42,7 @@ export default function Speaking() {
             visible: { transition: { staggerChildren: 0.1 } },
           }}
         >
-          {topics.map((topic, i) => (
+          {topicKeys.map((i) => (
             <motion.div
               key={i}
               className="glass-card rounded-2xl p-6"
@@ -80,13 +55,13 @@ export default function Speaking() {
                 className="font-bold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
-                {topic.title}
+                {t(`speaking.${i}.title`)}
               </h3>
               <p
                 className="text-sm leading-relaxed"
                 style={{ color: "var(--color-text-secondary)" }}
               >
-                {topic.description}
+                {t(`speaking.${i}.desc`)}
               </p>
             </motion.div>
           ))}

@@ -140,7 +140,9 @@ export default function Contact() {
 
               <div className="text-center">
                 <MagneticButton
+                  type="submit"
                   className="px-8 py-3 rounded-full text-sm font-semibold text-white transition-colors"
+                  style={{ backgroundColor: "var(--color-accent)" }}
                 >
                   {state.submitting ? t("contact.sending") : t("contact.send")}
                 </MagneticButton>

@@ -5,53 +5,13 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useI18n } from "@/lib/i18n";
 
 const highlights = [
-  {
-    area: "a",
-    title: "DEXLab",
-    description:
-      "Co-founder & Scientific Director of the Digital Experience Lab — a hub for AR, VR, AI, service robots, and neuroscientific tools at Maastricht University SBE.",
-    link: "https://www.sbe-dexlab.com",
-    linkText: "Visit DEXLab →",
-    accent: true,
-  },
-  {
-    area: "b",
-    title: "€2.1M+ Research Funding",
-    description:
-      "Secured competitive grants including Marie Curie, Comenius, NETSPAR, ERASMUS+, and international PhD funding from CSC and SACM.",
-    accent: true,
-  },
-  {
-    area: "c",
-    title: "Augmented Reality",
-    description:
-      "Pioneering research on AR's impact on consumer decision-making in frontline services.",
-  },
-  {
-    area: "d",
-    title: "AI & Digital Marketing",
-    description:
-      "Combining experimental and econometric methods to study AI-driven marketing decisions.",
-  },
-  {
-    area: "e",
-    title: "LIT Network",
-    description:
-      "Co-founded the Limburg Immersive Technologies Network connecting academia, industry, and SMEs.",
-    link: "https://www.litnetwork.nl",
-    linkText: "Learn more →",
-  },
-  {
-    area: "f",
-    title: "30+ Publications",
-    description: "Published in journals including Journal of Retailing, Journal of Service Research, and Computers in Human Behavior.",
-  },
-  {
-    area: "g",
-    title: "Executive Education",
-    description:
-      "MBA Digital Strategy, workshops & in-company training for Allianz, APG, Dutch Ministry of I&W, and more.",
-  },
+  { area: "a", titleKey: "bento.a.title", descKey: "bento.a.desc", link: "https://www.sbe-dexlab.com", linkKey: "bento.a.link", accent: true },
+  { area: "b", titleKey: "bento.b.title", descKey: "bento.b.desc", accent: true },
+  { area: "c", titleKey: "bento.c.title", descKey: "bento.c.desc" },
+  { area: "d", titleKey: "bento.d.title", descKey: "bento.d.desc" },
+  { area: "e", titleKey: "bento.e.title", descKey: "bento.e.desc", link: "https://www.litnetwork.nl", linkKey: "bento.e.link" },
+  { area: "f", titleKey: "bento.f.title", descKey: "bento.f.desc" },
+  { area: "g", titleKey: "bento.g.title", descKey: "bento.g.desc" },
 ];
 
 const containerVariants = {
@@ -114,16 +74,16 @@ export default function Bento() {
                     color: item.accent ? "var(--color-accent)" : "var(--color-text)",
                   }}
                 >
-                  {item.title}
+                  {t(item.titleKey)}
                 </h3>
                 <p
                   className="text-sm sm:text-base leading-relaxed"
                   style={{ color: "var(--color-text-secondary)" }}
                 >
-                  {item.description}
+                  {t(item.descKey)}
                 </p>
               </div>
-              {item.link && (
+              {item.link && item.linkKey && (
                 <a
                   href={item.link}
                   target="_blank"
@@ -131,7 +91,7 @@ export default function Bento() {
                   className="inline-block mt-4 text-sm font-semibold hover:opacity-70 transition-opacity"
                   style={{ color: "var(--color-accent)" }}
                 >
-                  {item.linkText}
+                  {t(item.linkKey)}
                 </a>
               )}
             </motion.div>

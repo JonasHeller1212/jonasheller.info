@@ -1,6 +1,6 @@
 "use client";
 
-import { useForm, ValidationError } from "@formspree/react";
+import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import MagneticButton from "./MagneticButton";
@@ -8,8 +8,36 @@ import { useI18n } from "@/lib/i18n";
 
 export default function Contact() {
   const { ref, isVisible } = useScrollAnimation(0.1);
-  const [state, handleSubmit] = useForm("mgonaray");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const { t } = useI18n();
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        setStatus("sent");
+        form.reset();
+      } else {
+        // AJAX blocked (reCAPTCHA enabled) — fall back to native form submit
+        form.removeEventListener("submit", () => {});
+        form.submit();
+      }
+    } catch {
+      // Network error — fall back to native form submit
+      form.submit();
+    }
+  }
 
   return (
     <section id="contact" className="py-14 sm:py-16 px-6">
@@ -46,7 +74,7 @@ export default function Contact() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="glass-card rounded-2xl p-8 sm:p-12"
         >
-          {state.succeeded ? (
+          {status === "sent" ? (
             <div className="text-center py-8">
               <p
                 className="text-lg font-semibold mb-2"
@@ -57,9 +85,21 @@ export default function Contact() {
               <p style={{ color: "var(--color-text-secondary)" }}>
                 {t("contact.thanksSub")}
               </p>
+              <button
+                className="mt-4 text-sm hover:opacity-70 transition-opacity"
+                style={{ color: "var(--color-accent)" }}
+                onClick={() => setStatus("idle")}
+              >
+                {t("contact.sendAnother")}
+              </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              action="https://formspree.io/f/mgonaray"
+              method="POST"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -83,7 +123,6 @@ export default function Contact() {
                     }}
                     placeholder={t("contact.namePlaceholder")}
                   />
-                  <ValidationError prefix="Name" field="name" errors={state.errors} />
                 </div>
                 <div>
                   <label
@@ -105,7 +144,6 @@ export default function Contact() {
                     }}
                     placeholder="your@email.com"
                   />
-                  <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
               </div>
 
@@ -129,14 +167,7 @@ export default function Contact() {
                   }}
                   placeholder={t("contact.messagePlaceholder")}
                 />
-                <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
-
-              {state.errors && (
-                <p className="text-sm text-center" style={{ color: "#ef4444" }}>
-                  {t("contact.error")}
-                </p>
-              )}
 
               <div className="text-center">
                 <MagneticButton
@@ -144,7 +175,7 @@ export default function Contact() {
                   className="px-8 py-3 rounded-full text-sm font-semibold text-white transition-colors"
                   style={{ backgroundColor: "var(--color-accent)" }}
                 >
-                  {state.submitting ? t("contact.sending") : t("contact.send")}
+                  {status === "sending" ? t("contact.sending") : t("contact.send")}
                 </MagneticButton>
               </div>
             </form>

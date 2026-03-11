@@ -180,6 +180,7 @@ const translations: TranslationMap = {
     de: "Ihre Nachricht wurde gesendet. Ich melde mich in Kürze.",
     nl: "Uw bericht is verzonden. Ik neem snel contact met u op.",
   },
+  "contact.sendAnother": { en: "Send another message", de: "Weitere Nachricht senden", nl: "Nog een bericht sturen" },
   "contact.error": {
     en: "Something went wrong. Please try again.",
     de: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",

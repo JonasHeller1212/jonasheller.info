@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useI18n } from "@/lib/i18n";
 
 export default function Footer() {
   const [showImpressum, setShowImpressum] = useState(false);
+  const { t } = useI18n();
 
   return (
     <>
@@ -15,14 +17,14 @@ export default function Footer() {
         }}
       >
         <p>
-          © {new Date().getFullYear()} Dr. Jonas Heller. All rights reserved.
+          © {new Date().getFullYear()} Dr. Jonas Heller. {t("footer.rights")}
         </p>
         <button
           onClick={() => setShowImpressum(true)}
           className="mt-2 hover:opacity-70 transition-opacity underline underline-offset-4 decoration-1"
           style={{ color: "var(--color-text-secondary)" }}
         >
-          Impressum & Privacy
+          {t("footer.impressum")}
         </button>
       </footer>
 

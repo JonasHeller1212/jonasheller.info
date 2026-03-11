@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import MagneticButton from "./MagneticButton";
+import { useI18n } from "@/lib/i18n";
 
 interface Paper {
   id: string;
@@ -305,11 +306,12 @@ const papers: Paper[] = [
 export default function Publications() {
   const { ref, isVisible } = useScrollAnimation(0.1);
   const [showAll, setShowAll] = useState(false);
+  const { t } = useI18n();
 
   const displayed = showAll ? papers : papers.slice(0, 6);
 
   return (
-    <section id="publications" className="py-24 px-6">
+    <section id="publications" className="py-14 sm:py-16 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -321,16 +323,16 @@ export default function Publications() {
             className="text-sm font-semibold tracking-widest uppercase mb-3"
             style={{ color: "var(--color-accent-secondary)" }}
           >
-            Publications
+            {t("pub.eyebrow")}
           </p>
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4"
             style={{ color: "var(--color-text)" }}
           >
-            Selected Papers
+            {t("pub.title")}
           </h2>
           <div className="flex gap-6 text-sm" style={{ color: "var(--color-text-secondary)" }}>
-            <span>{papers.length} Publications</span>
+            <span>{papers.length} {t("pub.count")}</span>
           </div>
         </motion.div>
 
@@ -380,7 +382,7 @@ export default function Publications() {
               className="px-6 py-2 rounded-full text-sm font-semibold border transition-colors"
               onClick={() => setShowAll(!showAll)}
             >
-              {showAll ? "Show Less" : `Show All ${papers.length} Papers`}
+              {showAll ? t("pub.showLess") : `${t("pub.showAll")} ${papers.length} ${t("pub.papers")}`}
             </MagneticButton>
           </div>
         )}

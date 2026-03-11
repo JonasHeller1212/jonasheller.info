@@ -84,16 +84,16 @@ const education = [
 ];
 
 const awards = [
-  { year: "2024", title: "SBE Junior Researcher Award", detail: "Best junior researcher (up to 5 years post-PhD) at the faculty" },
-  { year: "2022", title: "SBE Team Science Award", detail: "Outstanding team science for research group 'AugmentedReseARch'" },
-  { year: "2020", title: "Dean's Award for Outstanding Dissertations, UNSW", detail: "Top 10% dissertation with non to minimal revisions" },
+  { year: "2024", title: "SBE Junior Researcher Award", detail: "Awarded to a faculty member within 5 years post-PhD" },
+  { year: "2022", title: "SBE Team Science Award", detail: "Awarded to research group 'AugmentedReseARch'" },
+  { year: "2020", title: "Dean's Award for Outstanding Dissertations, UNSW", detail: "Top 10% dissertation" },
   { year: "2020", title: "SERVSIG Dissertation Award Finalist" },
   { year: "2018", title: "ANZMAC Best Paper Award" },
-  { year: "2018", title: "UNSW Outstanding Research Student Award", detail: "1 of 4 winners across all faculties at UNSW" },
-  { year: "2018", title: "UNSW Business School Research Fair Winner", detail: "1st of 40 Business School PhD students" },
-  { year: "2017", title: "ANZMAC Strategy Challenge Award", detail: "1st place across all Australian & New Zealand Business Schools" },
+  { year: "2018", title: "UNSW Outstanding Research Student Award", detail: "Awarded to 4 students across all faculties" },
+  { year: "2018", title: "UNSW Business School Research Fair Winner" },
+  { year: "2017", title: "ANZMAC Strategy Challenge Award" },
   { year: "2017", title: "CADE Best Paper Award" },
-  { year: "2016", title: "Excellence in Teaching Award, Maastricht University", detail: "Average above 8.5/10 for all courses (2014–2016)" },
+  { year: "2016", title: "Excellence in Teaching Award, Maastricht University", detail: "Average above 8.5/10 across all courses (2014–2016)" },
 ];
 
 const funding = [

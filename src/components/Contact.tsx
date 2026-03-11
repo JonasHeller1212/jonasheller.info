@@ -151,6 +151,35 @@ export default function Contact() {
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
 
+              <label className="flex items-start gap-3 text-sm cursor-pointer" style={{ color: "var(--color-text-secondary)" }}>
+                <input
+                  type="checkbox"
+                  name="gdpr_consent"
+                  required
+                  className="mt-0.5 accent-[var(--color-accent)]"
+                />
+                <span>
+                  {t("contact.gdpr").split(/<a>|<\/a>/).map((part, i) =>
+                    i === 1 ? (
+                      <button
+                        key={i}
+                        type="button"
+                        className="underline underline-offset-4 decoration-1 hover:opacity-70 inline"
+                        style={{ color: "var(--color-accent)" }}
+                        onClick={() => {
+                          const btn = document.querySelector<HTMLButtonElement>("footer button");
+                          btn?.click();
+                        }}
+                      >
+                        {part}
+                      </button>
+                    ) : (
+                      <span key={i}>{part}</span>
+                    )
+                  )}
+                </span>
+              </label>
+
               <div className="text-center">
                 <MagneticButton
                   type="submit"

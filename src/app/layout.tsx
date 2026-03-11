@@ -20,9 +20,9 @@ const siteUrl = "https://www.jonasheller.info";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Dr. Jonas Heller — Researcher · Consultant · Speaker",
+  title: "Dr. Jonas Heller | AR, VR & AI Marketing Expert | Keynote Speaker & Consultant",
   description:
-    "Jonas Heller is a tenured Assistant Professor of Marketing at Maastricht University. Co-Founder of DEXLab & LIT Network. Research in augmented reality, virtual reality, AI, and digital marketing.",
+    "Dr. Jonas Heller is a marketing professor at Maastricht University and keynote speaker specializing in AR, VR, AI and consumer behavior. Available for speaking, consulting, and research collaboration.",
   keywords: [
     "Jonas Heller",
     "Jonas Heller professor",
@@ -50,20 +50,20 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Dr. Jonas Heller — Researcher · Consultant · Speaker",
+    title: "Dr. Jonas Heller — AR, VR & AI Marketing Expert",
     description:
-      "Tenured Assistant Professor of Marketing at Maastricht University. Co-Founder of DEXLab & LIT Network. Research in AR, VR, AI, and digital marketing.",
+      "Marketing professor, keynote speaker, and consultant on immersive technologies and AI-driven consumer behavior.",
     url: siteUrl,
     siteName: "Jonas Heller",
-    type: "website",
+    type: "profile",
     locale: "en_US",
     alternateLocale: ["de_DE", "nl_NL"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Jonas Heller — Researcher · Consultant · Speaker",
+    title: "Dr. Jonas Heller — AR, VR & AI Marketing Expert",
     description:
-      "Tenured Assistant Professor of Marketing at Maastricht University. Research in AR, VR, AI, and digital marketing.",
+      "Marketing professor, keynote speaker, and consultant on immersive technologies and AI-driven consumer behavior.",
     creator: "@HellerJonas",
   },
   robots: {
@@ -87,8 +87,7 @@ const jsonLd = {
   jobTitle: "Assistant Professor of Marketing",
   worksFor: {
     "@type": "Organization",
-    name: "Maastricht University",
-    department: "School of Business and Economics",
+    name: "Maastricht University School of Business and Economics",
     url: "https://www.maastrichtuniversity.nl",
   },
   affiliation: [
@@ -115,10 +114,11 @@ const jsonLd = {
   knowsAbout: [
     "Augmented Reality",
     "Virtual Reality",
-    "Artificial Intelligence",
-    "Digital Marketing",
-    "Services Marketing",
     "Consumer Behavior",
+    "AI Marketing",
+    "Behavioral Science",
+    "Extended Reality",
+    "Digital Transformation",
     "Immersive Technologies",
     "Brain-Computer Interfaces",
   ],

@@ -133,22 +133,22 @@ export default function Hero() {
         >
           <MagneticButton
             as="a"
-            href="#research"
+            href="#contact"
             className="px-8 py-3 rounded-full text-sm font-semibold text-white transition-colors"
             style={{ backgroundColor: "var(--color-accent)" } as React.CSSProperties}
           >
-            {t("hero.viewResearch")}
+            {t("hero.getInTouch")}
           </MagneticButton>
           <MagneticButton
             as="a"
-            href="#contact"
+            href="#research"
             className="px-8 py-3 rounded-full text-sm font-semibold border transition-colors"
             style={{
               borderColor: "var(--color-border)",
               color: "var(--color-text)",
             } as React.CSSProperties}
           >
-            {t("hero.getInTouch")}
+            {t("hero.viewResearch")}
           </MagneticButton>
         </motion.div>
       </div>

@@ -53,7 +53,7 @@ const translations: TranslationMap = {
   "terminal.line.4": { en: 'research: ["AR/VR", "AI", "Digital Marketing", "Consumer Behavior"]', de: 'Forschung: ["AR/VR", "KI", "Digitales Marketing", "Konsumentenverhalten"]', nl: 'onderzoek: ["AR/VR", "AI", "Digitale Marketing", "Consumentengedrag"]' },
   "terminal.line.5": { en: 'funding: "€2.1M+ in competitive grants"', de: 'Förderung: "€2,1 Mio.+ kompetitive Drittmittel"', nl: 'financiering: "€2,1 mln.+ competitieve subsidies"' },
   "terminal.line.6": { en: 'awards: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]', de: 'Auszeichnungen: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]', nl: 'prijzen: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]' },
-  "terminal.line.7": { en: 'education: "PhD UNSW | MSc & BSc Maastricht University"', de: 'Ausbildung: "PhD UNSW | MSc & BSc Universität Maastricht"', nl: 'opleiding: "PhD UNSW | MSc & BSc Universiteit Maastricht"' },
+  "terminal.line.7": { en: 'education: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Maastricht University"', de: 'Ausbildung: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Universität Maastricht"', nl: 'opleiding: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Universiteit Maastricht"' },
   "terminal.line.8": { en: 'industry: ["Zalando", "Jimdo"]', de: 'Industrie: ["Zalando", "Jimdo"]', nl: 'industrie: ["Zalando", "Jimdo"]' },
   "terminal.line.9": { en: 'publications: "30+ peer-reviewed articles | h-index 23"', de: 'Publikationen: "30+ peer-reviewed Artikel | h-Index 23"', nl: 'publicaties: "30+ peer-reviewed artikelen | h-index 23"' },
 

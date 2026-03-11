@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, MouseEvent } from "react";
 import MagneticButton from "./MagneticButton";
 import { useI18n, localeLabels, Locale } from "@/lib/i18n";
 
@@ -39,6 +39,18 @@ export default function Nav() {
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
+  const handleNavClick = useCallback((e: MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!href.startsWith("#")) return; // let normal links navigate
+    e.preventDefault();
+    setMenuOpen(false);
+    const target = document.getElementById(href.slice(1));
+    if (target) {
+      const navHeight = 80;
+      const y = target.getBoundingClientRect().top + window.scrollY - navHeight;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -64,6 +76,7 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm font-medium hover:opacity-70 transition-opacity"
               style={{ color: "var(--color-text-secondary)" }}
             >
@@ -141,7 +154,7 @@ export default function Nav() {
               href={link.href}
               className="text-base font-medium py-2 hover:opacity-70 transition-opacity"
               style={{ color: "var(--color-text)" }}
-              onClick={() => setMenuOpen(false)}
+              onClick={(e) => handleNavClick(e, link.href)}
             >
               {t(link.key)}
             </a>

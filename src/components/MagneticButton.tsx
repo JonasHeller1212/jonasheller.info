@@ -7,6 +7,7 @@ interface MagneticButtonProps {
   className?: string;
   style?: CSSProperties;
   as?: "button" | "a";
+  type?: "button" | "submit" | "reset";
   href?: string;
   target?: string;
   rel?: string;
@@ -18,6 +19,7 @@ export default function MagneticButton({
   className = "",
   style: externalStyle,
   as = "button",
+  type,
   href,
   target,
   rel,
@@ -63,5 +65,5 @@ export default function MagneticButton({
     return <a {...props} href={href} target={target} rel={rel}>{children}</a>;
   }
 
-  return <button {...props}>{children}</button>;
+  return <button {...props} type={type ?? "button"}>{children}</button>;
 }

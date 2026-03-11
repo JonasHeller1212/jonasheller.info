@@ -2,39 +2,35 @@
 
 import { useEffect, useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useI18n } from "@/lib/i18n";
 
-const terminalLines = [
-  { prompt: ">", text: 'name: "Dr. Jonas Heller"' },
-  { prompt: ">", text: 'role: "Assistant Professor of Marketing"' },
-  { prompt: ">", text: 'affiliation: "Maastricht University, SBE"' },
-  { prompt: ">", text: 'labs: ["DEXLab", "LIT Network"]' },
-  { prompt: ">", text: 'research: ["AR/VR", "AI", "Digital Marketing", "Consumer Behavior"]' },
-  { prompt: ">", text: 'funding: "€2.1M+ in competitive grants"' },
-  { prompt: ">", text: 'awards: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]' },
-  { prompt: ">", text: 'education: "PhD UNSW | MSc & BSc Maastricht University"' },
-  { prompt: ">", text: 'industry: ["Zalando", "Jimdo"]' },
-  { prompt: ">", text: 'publications: "30+ peer-reviewed articles | h-index 23"' },
-];
+const LINE_COUNT = 10;
 
 export default function Terminal() {
   const { ref, isVisible } = useScrollAnimation(0.2);
+  const { t } = useI18n();
   const [visibleLines, setVisibleLines] = useState(0);
   const [currentChar, setCurrentChar] = useState(0);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isTyping, setIsTyping] = useState(false);
 
+  const terminalLines = Array.from({ length: LINE_COUNT }, (_, i) => ({
+    prompt: ">",
+    text: t(`terminal.line.${i}`),
+  }));
+
   useEffect(() => {
     if (!isVisible) return;
 
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisibleLines(terminalLines.length);
+      setVisibleLines(LINE_COUNT);
       setCurrentChar(999);
       return;
     }
 
     setIsTyping(true);
 
-    if (visibleLines >= terminalLines.length) {
+    if (visibleLines >= LINE_COUNT) {
       setIsTyping(false);
       return;
     }
@@ -65,7 +61,7 @@ export default function Terminal() {
             <div className="w-3 h-3 rounded-full bg-red-500" />
             <div className="w-3 h-3 rounded-full bg-yellow-500" />
             <div className="w-3 h-3 rounded-full bg-green-500" />
-            <span className="ml-3 text-xs text-white/40 font-mono">about.sh</span>
+            <span className="ml-3 text-xs text-white/40 font-mono">{t("terminal.title")}</span>
           </div>
 
           {/* Terminal content */}
@@ -82,7 +78,7 @@ export default function Terminal() {
             ))}
 
             {/* Currently typing line */}
-            {visibleLines < terminalLines.length && isVisible && (
+            {visibleLines < LINE_COUNT && isVisible && (
               <div className="mb-1">
                 <span style={{ color: "var(--color-terminal-prompt)" }}>
                   {terminalLines[visibleLines].prompt}{" "}
@@ -97,7 +93,7 @@ export default function Terminal() {
             )}
 
             {/* Blinking cursor after all done */}
-            {visibleLines >= terminalLines.length && (
+            {visibleLines >= LINE_COUNT && (
               <div className="mt-2">
                 <span style={{ color: "var(--color-terminal-prompt)" }}>&gt; </span>
                 <span className="terminal-cursor" style={{ color: "var(--color-terminal-text)" }}>

@@ -53,7 +53,7 @@ const translations: TranslationMap = {
   "terminal.line.4": { en: 'research: ["AR/VR", "AI", "Digital Marketing", "Consumer Behavior"]', de: 'Forschung: ["AR/VR", "KI", "Digitales Marketing", "Konsumentenverhalten"]', nl: 'onderzoek: ["AR/VR", "AI", "Digitale Marketing", "Consumentengedrag"]' },
   "terminal.line.5": { en: 'funding: "€2.1M+ in competitive grants"', de: 'Förderung: "€2,1 Mio.+ kompetitive Drittmittel"', nl: 'financiering: "€2,1 mln.+ competitieve subsidies"' },
   "terminal.line.6": { en: 'awards: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]', de: 'Auszeichnungen: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]', nl: 'prijzen: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]' },
-  "terminal.line.7": { en: 'education: "PhD UNSW | MSc & BSc Maastricht University"', de: 'Ausbildung: "PhD UNSW | MSc & BSc Universität Maastricht"', nl: 'opleiding: "PhD UNSW | MSc & BSc Universiteit Maastricht"' },
+  "terminal.line.7": { en: 'education: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Maastricht University"', de: 'Ausbildung: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Universität Maastricht"', nl: 'opleiding: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Universiteit Maastricht"' },
   "terminal.line.8": { en: 'industry: ["Zalando", "Jimdo"]', de: 'Industrie: ["Zalando", "Jimdo"]', nl: 'industrie: ["Zalando", "Jimdo"]' },
   "terminal.line.9": { en: 'publications: "30+ peer-reviewed articles | h-index 23"', de: 'Publikationen: "30+ peer-reviewed Artikel | h-Index 23"', nl: 'publicaties: "30+ peer-reviewed artikelen | h-index 23"' },
 
@@ -77,11 +77,11 @@ const translations: TranslationMap = {
     de: "Kompetitive Drittmittel eingeworben, u.a. Marie Curie, Comenius, NETSPAR, ERASMUS+ sowie internationale PhD-Förderungen von CSC und SACM.",
     nl: "Competitieve subsidies verworven, waaronder Marie Curie, Comenius, NETSPAR, ERASMUS+ en internationale PhD-financiering van CSC en SACM.",
   },
-  "bento.c.title": { en: "Augmented Reality", de: "Augmented Reality", nl: "Augmented Reality" },
+  "bento.c.title": { en: "Immersive Technologies", de: "Immersive Technologien", nl: "Immersieve Technologieën" },
   "bento.c.desc": {
-    en: "Pioneering research on AR's impact on consumer decision-making in frontline services.",
-    de: "Wegweisende Forschung zur Wirkung von AR auf Konsumentenentscheidungen im Dienstleistungsbereich.",
-    nl: "Baanbrekend onderzoek naar de invloed van AR op consumentenbeslissingen in dienstverlening.",
+    en: "Pioneering research on AR, VR, and XR's impact on consumer decision-making in frontline services.",
+    de: "Wegweisende Forschung zur Wirkung von AR, VR und XR auf Konsumentenentscheidungen im Dienstleistungsbereich.",
+    nl: "Baanbrekend onderzoek naar de invloed van AR, VR en XR op consumentenbeslissingen in dienstverlening.",
   },
   "bento.d.title": { en: "AI & Digital Marketing", de: "KI & Digitales Marketing", nl: "AI & Digitale Marketing" },
   "bento.d.desc": {
@@ -180,6 +180,7 @@ const translations: TranslationMap = {
     de: "Ihre Nachricht wurde gesendet. Ich melde mich in Kürze.",
     nl: "Uw bericht is verzonden. Ik neem snel contact met u op.",
   },
+  "contact.sendAnother": { en: "Send another message", de: "Weitere Nachricht senden", nl: "Nog een bericht sturen" },
   "contact.error": {
     en: "Something went wrong. Please try again.",
     de: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",

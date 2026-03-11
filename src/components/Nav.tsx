@@ -41,8 +41,16 @@ export default function Nav() {
 
   const handleNavClick = useCallback((e: MouseEvent<HTMLAnchorElement>, href: string) => {
     if (!href.startsWith("#")) return; // let normal links navigate
-    e.preventDefault();
     setMenuOpen(false);
+
+    // If not on the home page, navigate to home with the hash
+    if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") {
+      // Don't prevent default — let the browser navigate to /#section
+      e.currentTarget.href = "/" + href;
+      return;
+    }
+
+    e.preventDefault();
     const target = document.getElementById(href.slice(1));
     if (target) {
       const navHeight = 80;

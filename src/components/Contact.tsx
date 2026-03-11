@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -9,7 +10,15 @@ import { useI18n } from "@/lib/i18n";
 export default function Contact() {
   const { ref, isVisible } = useScrollAnimation(0.1);
   const [state, handleSubmit] = useForm("mgonaray");
+  const [dismissed, setDismissed] = useState(false);
   const { t } = useI18n();
+
+  // Reset dismissed flag when a new submission starts
+  useEffect(() => {
+    if (state.submitting) setDismissed(false);
+  }, [state.submitting]);
+
+  const succeeded = state.succeeded && !dismissed;
 
   return (
     <section id="contact" className="py-14 sm:py-16 px-6">
@@ -46,7 +55,7 @@ export default function Contact() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="glass-card rounded-2xl p-8 sm:p-12"
         >
-          {state.succeeded ? (
+          {succeeded ? (
             <div className="text-center py-8">
               <p
                 className="text-lg font-semibold mb-2"
@@ -57,9 +66,19 @@ export default function Contact() {
               <p style={{ color: "var(--color-text-secondary)" }}>
                 {t("contact.thanksSub")}
               </p>
+              <button
+                className="mt-4 text-sm hover:opacity-70 transition-opacity"
+                style={{ color: "var(--color-accent)" }}
+                onClick={() => setDismissed(true)}
+              >
+                {t("contact.sendAnother")}
+              </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -131,12 +150,6 @@ export default function Contact() {
                 />
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
-
-              {state.errors && (
-                <p className="text-sm text-center" style={{ color: "#ef4444" }}>
-                  {t("contact.error")}
-                </p>
-              )}
 
               <div className="text-center">
                 <MagneticButton

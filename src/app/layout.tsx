@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
+import { I18nProvider } from "@/lib/i18n";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -56,6 +57,7 @@ export const metadata: Metadata = {
     siteName: "Jonas Heller",
     type: "website",
     locale: "en_US",
+    alternateLocale: ["de_DE", "nl_NL"],
   },
   twitter: {
     card: "summary_large_image",
@@ -143,7 +145,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <I18nProvider>{children}</I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

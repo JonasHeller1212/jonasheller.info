@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useI18n } from "@/lib/i18n";
 
 const topics = [
   {
@@ -32,9 +33,10 @@ const topics = [
 
 export default function Speaking() {
   const { ref, isVisible } = useScrollAnimation(0.1);
+  const { t } = useI18n();
 
   return (
-    <section id="speaking" className="py-24 px-6">
+    <section id="speaking" className="py-14 sm:py-16 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,13 +48,13 @@ export default function Speaking() {
             className="text-sm font-semibold tracking-widest uppercase mb-3"
             style={{ color: "var(--color-accent-secondary)" }}
           >
-            Speaking
+            {t("speaking.eyebrow")}
           </p>
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
             style={{ color: "var(--color-text)" }}
           >
-            Keynote Topics
+            {t("speaking.title")}
           </h2>
         </motion.div>
 

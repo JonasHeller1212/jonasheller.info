@@ -4,13 +4,15 @@ import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import MagneticButton from "./MagneticButton";
+import { useI18n } from "@/lib/i18n";
 
 export default function Contact() {
   const { ref, isVisible } = useScrollAnimation(0.1);
   const [state, handleSubmit] = useForm("mgonaray");
+  const { t } = useI18n();
 
   return (
-    <section id="contact" className="py-24 px-6">
+    <section id="contact" className="py-14 sm:py-16 px-6">
       <div className="max-w-4xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,19 +24,19 @@ export default function Contact() {
             className="text-sm font-semibold tracking-widest uppercase mb-3"
             style={{ color: "var(--color-accent-secondary)" }}
           >
-            Contact
+            {t("contact.eyebrow")}
           </p>
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4"
             style={{ color: "var(--color-text)" }}
           >
-            Get in Touch
+            {t("contact.title")}
           </h2>
           <p
             className="text-base max-w-xl mx-auto"
             style={{ color: "var(--color-text-secondary)" }}
           >
-            Interested in research collaborations, speaking engagements, or consulting? Reach out.
+            {t("contact.subtitle")}
           </p>
         </motion.div>
 
@@ -50,10 +52,10 @@ export default function Contact() {
                 className="text-lg font-semibold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
-                Thank you!
+                {t("contact.thanks")}
               </p>
               <p style={{ color: "var(--color-text-secondary)" }}>
-                Your message has been sent. I&apos;ll get back to you soon.
+                {t("contact.thanksSub")}
               </p>
             </div>
           ) : (
@@ -65,7 +67,7 @@ export default function Contact() {
                     className="block text-sm font-medium mb-2"
                     style={{ color: "var(--color-text-secondary)" }}
                   >
-                    Name
+                    {t("contact.name")}
                   </label>
                   <input
                     id="name"
@@ -79,7 +81,7 @@ export default function Contact() {
                       // @ts-expect-error -- CSS custom property
                       "--tw-ring-color": "var(--color-accent)",
                     }}
-                    placeholder="Your name"
+                    placeholder={t("contact.namePlaceholder")}
                   />
                   <ValidationError prefix="Name" field="name" errors={state.errors} />
                 </div>
@@ -89,7 +91,7 @@ export default function Contact() {
                     className="block text-sm font-medium mb-2"
                     style={{ color: "var(--color-text-secondary)" }}
                   >
-                    Email
+                    {t("contact.email")}
                   </label>
                   <input
                     id="email"
@@ -113,7 +115,7 @@ export default function Contact() {
                   className="block text-sm font-medium mb-2"
                   style={{ color: "var(--color-text-secondary)" }}
                 >
-                  Message
+                  {t("contact.message")}
                 </label>
                 <textarea
                   id="message"
@@ -125,14 +127,14 @@ export default function Contact() {
                     borderColor: "var(--color-border)",
                     color: "var(--color-text)",
                   }}
-                  placeholder="Your message..."
+                  placeholder={t("contact.messagePlaceholder")}
                 />
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
 
               {state.errors && (
                 <p className="text-sm text-center" style={{ color: "#ef4444" }}>
-                  Something went wrong. Please try again.
+                  {t("contact.error")}
                 </p>
               )}
 
@@ -140,7 +142,7 @@ export default function Contact() {
                 <MagneticButton
                   className="px-8 py-3 rounded-full text-sm font-semibold text-white transition-colors"
                 >
-                  {state.submitting ? "Sending..." : "Send Message"}
+                  {state.submitting ? t("contact.sending") : t("contact.send")}
                 </MagneticButton>
               </div>
             </form>
@@ -151,7 +153,7 @@ export default function Contact() {
             style={{ borderColor: "var(--color-border)" }}
           >
             <p className="font-medium mb-1" style={{ color: "var(--color-text)" }}>
-              Office
+              {t("contact.office")}
             </p>
             <p style={{ color: "var(--color-text-secondary)" }}>
               Room B1.17a, Tongersestraat 53

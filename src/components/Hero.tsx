@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useScrambleText } from "@/hooks/useScrambleText";
 import MagneticButton from "./MagneticButton";
+import { useI18n } from "@/lib/i18n";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,9 +14,10 @@ export default function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
   const fgRef = useRef<HTMLDivElement>(null);
+  const { t } = useI18n();
 
   const headline = useScrambleText("Dr. Jonas Heller", { delay: 300, speed: 25 });
-  const subtitle = useScrambleText("Researcher · Consultant · Speaker", { delay: 800, speed: 20 });
+  const subtitle = useScrambleText(t("hero.subtitle"), { delay: 800, speed: 20 });
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -43,7 +45,6 @@ export default function Hero() {
       ref={sectionRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Parallax background layer (0.3x scroll speed via GSAP) */}
       <div
         ref={bgRef}
         className="absolute inset-0 -z-10"
@@ -51,7 +52,6 @@ export default function Hero() {
           background: `linear-gradient(135deg, var(--color-hero-gradient-start) 0%, var(--color-hero-gradient-end) 50%, var(--color-bg) 100%)`,
         }}
       >
-        {/* Subtle grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -61,7 +61,6 @@ export default function Hero() {
         />
       </div>
 
-      {/* Foreground text (1x scroll speed, natural) */}
       <div ref={fgRef} className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -87,13 +86,23 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
-          className="text-base sm:text-lg max-w-2xl mx-auto mb-10"
-          style={{ color: "var(--color-text-secondary)" }}
+          className="text-base sm:text-lg font-medium max-w-2xl mx-auto mb-4"
+          style={{ color: "var(--color-text)" }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          Assistant Professor in Marketing at Maastricht University. Co-Founder of{" "}
+          {t("hero.value")}
+        </motion.p>
+
+        <motion.p
+          className="text-sm sm:text-base max-w-2xl mx-auto mb-10"
+          style={{ color: "var(--color-text-secondary)" }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.0, duration: 0.8 }}
+        >
+          {t("hero.bio")}{" "}
           <a
             href="https://www.sbe-dexlab.com"
             target="_blank"
@@ -120,7 +129,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0, duration: 0.8 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
         >
           <MagneticButton
             as="a"
@@ -128,7 +137,7 @@ export default function Hero() {
             className="px-8 py-3 rounded-full text-sm font-semibold text-white transition-colors"
             style={{ backgroundColor: "var(--color-accent)" } as React.CSSProperties}
           >
-            View Research
+            {t("hero.viewResearch")}
           </MagneticButton>
           <MagneticButton
             as="a"
@@ -139,7 +148,7 @@ export default function Hero() {
               color: "var(--color-text)",
             } as React.CSSProperties}
           >
-            Get in Touch
+            {t("hero.getInTouch")}
           </MagneticButton>
         </motion.div>
       </div>

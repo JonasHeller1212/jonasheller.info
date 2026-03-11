@@ -54,7 +54,7 @@ export default function Terminal() {
   }, [isVisible, visibleLines, currentChar]);
 
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-14 sm:py-16 px-6">
       <div className="max-w-4xl mx-auto" ref={ref}>
         <div
           className="rounded-xl overflow-hidden shadow-2xl"

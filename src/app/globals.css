@@ -129,8 +129,8 @@ html.lenis body {
 .bento-grid {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-    "a a b b"
-    "c d d e"
+    "a a e e"
+    "b b c d"
     "f f g g";
 }
 

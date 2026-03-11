@@ -77,11 +77,11 @@ const translations: TranslationMap = {
     de: "Kompetitive Drittmittel eingeworben, u.a. Marie Curie, Comenius, NETSPAR, ERASMUS+ sowie internationale PhD-Förderungen von CSC und SACM.",
     nl: "Competitieve subsidies verworven, waaronder Marie Curie, Comenius, NETSPAR, ERASMUS+ en internationale PhD-financiering van CSC en SACM.",
   },
-  "bento.c.title": { en: "Augmented Reality", de: "Augmented Reality", nl: "Augmented Reality" },
+  "bento.c.title": { en: "Immersive Technologies", de: "Immersive Technologien", nl: "Immersieve Technologieën" },
   "bento.c.desc": {
-    en: "Pioneering research on AR's impact on consumer decision-making in frontline services.",
-    de: "Wegweisende Forschung zur Wirkung von AR auf Konsumentenentscheidungen im Dienstleistungsbereich.",
-    nl: "Baanbrekend onderzoek naar de invloed van AR op consumentenbeslissingen in dienstverlening.",
+    en: "Pioneering research on AR, VR, and XR's impact on consumer decision-making in frontline services.",
+    de: "Wegweisende Forschung zur Wirkung von AR, VR und XR auf Konsumentenentscheidungen im Dienstleistungsbereich.",
+    nl: "Baanbrekend onderzoek naar de invloed van AR, VR en XR op consumentenbeslissingen in dienstverlening.",
   },
   "bento.d.title": { en: "AI & Digital Marketing", de: "KI & Digitales Marketing", nl: "AI & Digitale Marketing" },
   "bento.d.desc": {

@@ -66,6 +66,55 @@ export default function Speaking() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* Past engagements */}
+        <motion.div
+          className="mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.4, duration: 0.6 }}
+        >
+          <h3 className="text-lg font-bold mb-3" style={{ color: "var(--color-text)" }}>
+            {t("speaking.pastTitle")}
+          </h3>
+          <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-secondary)" }}>
+            {t("speaking.past")}
+          </p>
+        </motion.div>
+
+        {/* Speaker reel placeholder */}
+        <motion.div
+          className="mt-8 glass-card rounded-2xl p-8 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.5, duration: 0.6 }}
+        >
+          <h3 className="text-lg font-bold mb-2" style={{ color: "var(--color-text)" }}>
+            {t("speaking.reelTitle")}
+          </h3>
+          <p className="text-sm" style={{ color: "var(--color-text-secondary)" }}>
+            {t("speaking.reelPlaceholder")}
+          </p>
+        </motion.div>
+
+        {/* Booking CTA */}
+        <motion.div
+          className="mt-8 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.6, duration: 0.6 }}
+        >
+          <p className="text-sm mb-4" style={{ color: "var(--color-text-secondary)" }}>
+            {t("speaking.bookingCta")}
+          </p>
+          <a
+            href="#contact"
+            className="inline-block px-8 py-3 rounded-full text-sm font-semibold text-white transition-colors hover:opacity-90"
+            style={{ backgroundColor: "var(--color-accent)" }}
+          >
+            {t("speaking.bookingBtn")}
+          </a>
+        </motion.div>
       </div>
     </section>
   );

@@ -7,6 +7,8 @@ import Terminal from "@/components/Terminal";
 import Bento from "@/components/Bento";
 import Publications from "@/components/Publications";
 import Speaking from "@/components/Speaking";
+import Testimonials from "@/components/Testimonials";
+import Consulting from "@/components/Consulting";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -24,6 +26,8 @@ export default function Home() {
         <Bento />
         <Publications />
         <Speaking />
+        <Testimonials />
+        <Consulting />
         <Contact />
       </main>
       <Footer />

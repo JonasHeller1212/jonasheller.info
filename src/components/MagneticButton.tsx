@@ -12,6 +12,8 @@ interface MagneticButtonProps {
   target?: string;
   rel?: string;
   onClick?: () => void;
+  "aria-label"?: string;
+  title?: string;
 }
 
 export default function MagneticButton({
@@ -24,6 +26,8 @@ export default function MagneticButton({
   target,
   rel,
   onClick,
+  "aria-label": ariaLabel,
+  title,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLElement>(null);
   const [transform, setTransform] = useState({ x: 0, y: 0 });
@@ -59,6 +63,8 @@ export default function MagneticButton({
     onMouseLeave: handleMouseLeave,
     "data-magnetic": true,
     onClick,
+    "aria-label": ariaLabel,
+    title,
   };
 
   if (as === "a") {

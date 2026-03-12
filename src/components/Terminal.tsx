@@ -103,6 +103,13 @@ export default function Terminal() {
             )}
           </div>
         </div>
+
+        <p
+          className="mt-8 text-base sm:text-lg leading-relaxed"
+          style={{ color: "var(--color-text-secondary)" }}
+        >
+          {t("about.bio")}
+        </p>
       </div>
     </section>
   );

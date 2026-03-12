@@ -55,7 +55,14 @@ const translations: TranslationMap = {
   "terminal.line.6": { en: 'awards: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]', de: 'Auszeichnungen: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]', nl: 'prijzen: ["SBE Junior Researcher 2024", "Dean\'s Award UNSW"]' },
   "terminal.line.7": { en: 'education: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Maastricht University"', de: 'Ausbildung: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Universität Maastricht"', nl: 'opleiding: "PhD Digital Marketing @ UNSW | M.Sc. International Business: SCM & B.Sc. International Business @ Universiteit Maastricht"' },
   "terminal.line.8": { en: 'industry: ["Zalando", "Jimdo"]', de: 'Industrie: ["Zalando", "Jimdo"]', nl: 'industrie: ["Zalando", "Jimdo"]' },
-  "terminal.line.9": { en: 'publications: "30+ peer-reviewed articles | h-index 23"', de: 'Publikationen: "30+ peer-reviewed Artikel | h-Index 23"', nl: 'publicaties: "30+ peer-reviewed artikelen | h-index 23"' },
+  "terminal.line.9": { en: 'publications: "39 peer-reviewed articles | h-index 23"', de: 'Publikationen: "39 peer-reviewed Artikel | h-Index 23"', nl: 'publicaties: "39 peer-reviewed artikelen | h-index 23"' },
+
+  // About bio
+  "about.bio": {
+    en: "Jonas Heller is an Assistant Professor of Marketing at Maastricht University\u2019s School of Business and Economics, where he directs DEXLab \u2014 a research lab specializing in immersive technologies, AI, and consumer neuroscience. He has secured over \u20AC2.1M in competitive research funding, published 39 peer-reviewed papers, and advises organizations ranging from Allianz to government ministries on the behavioral science of digital transformation. He speaks internationally on AR, VR, AI, and the future of human-technology interaction.",
+    de: "Jonas Heller ist Assistant Professor f\u00fcr Marketing an der School of Business and Economics der Universit\u00e4t Maastricht, wo er das DEXLab leitet \u2014 ein Forschungslabor f\u00fcr immersive Technologien, KI und Konsumenten-Neurowissenschaften. Er hat \u00fcber 2,1 Mio. \u20AC an kompetitiven Forschungsmitteln eingeworben, 39 peer-reviewed Artikel ver\u00f6ffentlicht und ber\u00e4t Organisationen von Allianz bis zu Regierungsministerien zur Verhaltenswissenschaft der digitalen Transformation. Er h\u00e4lt international Vortr\u00e4ge \u00fcber AR, VR, KI und die Zukunft der Mensch-Technologie-Interaktion.",
+    nl: "Jonas Heller is Assistant Professor Marketing aan de School of Business and Economics van de Universiteit Maastricht, waar hij DEXLab leidt \u2014 een onderzoekslab gespecialiseerd in immersieve technologie\u00ebn, AI en consumentenneurowetenschappen. Hij heeft meer dan \u20AC2,1 miljoen aan competitieve onderzoeksfinanciering verworven, 39 peer-reviewed artikelen gepubliceerd en adviseert organisaties van Allianz tot overheidsministeries over de gedragswetenschap van digitale transformatie. Hij spreekt internationaal over AR, VR, AI en de toekomst van mens-technologie-interactie.",
+  },
 
   // Bento
   "bento.eyebrow": { en: "Research & Impact", de: "Forschung & Wirkung", nl: "Onderzoek & Impact" },
@@ -96,7 +103,7 @@ const translations: TranslationMap = {
     nl: "Medeoprichter van het Limburg Immersive Technologies Network dat wetenschap, industrie en mkb verbindt.",
   },
   "bento.e.link": { en: "Learn more →", de: "Mehr erfahren →", nl: "Meer informatie →" },
-  "bento.f.title": { en: "30+ Publications", de: "30+ Publikationen", nl: "30+ Publicaties" },
+  "bento.f.title": { en: "39 Publications", de: "39 Publikationen", nl: "39 Publicaties" },
   "bento.f.desc": {
     en: "Published in journals including Journal of Retailing, Journal of Service Research, and Computers in Human Behavior.",
     de: "Veröffentlichungen u.a. in Journal of Retailing, Journal of Service Research und Computers in Human Behavior.",
@@ -138,7 +145,7 @@ const translations: TranslationMap = {
   "speaking.2.desc": {
     en: "Exploring the intersection of neuroscience and consumer research.",
     de: "An der Schnittstelle von Neurowissenschaft und Konsumentenforschung.",
-    nl: "De kruising van neurowetenschappen en consumentenonderzoek verkennen.",
+    nl: "Het snijvlak van neurowetenschappen en consumentenonderzoek verkennen.",
   },
   "speaking.3.title": { en: "The Future of Immersive Work and the Metaverse", de: "Die Zukunft immersiver Arbeit und des Metaverse", nl: "De toekomst van immersief werken en het metaverse" },
   "speaking.3.desc": {
@@ -159,6 +166,50 @@ const translations: TranslationMap = {
     nl: "Hoe open science, open data en transparante praktijken de wetenschap verbeteren.",
   },
 
+  // Speaking extras
+  "speaking.pastTitle": { en: "Past Engagements", de: "Bisherige Auftritte", nl: "Eerdere optredens" },
+  "speaking.past": {
+    en: "TEDx Maastricht 2024 \u00b7 XR Summit Berlin 2024 \u00b7 TNW Conference Amsterdam 2023 \u00b7 EMAC Annual Conference 2023 \u00b7 Frontiers in Service Conference 2022",
+    de: "TEDx Maastricht 2024 \u00b7 XR Summit Berlin 2024 \u00b7 TNW Conference Amsterdam 2023 \u00b7 EMAC Annual Conference 2023 \u00b7 Frontiers in Service Conference 2022",
+    nl: "TEDx Maastricht 2024 \u00b7 XR Summit Berlin 2024 \u00b7 TNW Conference Amsterdam 2023 \u00b7 EMAC Annual Conference 2023 \u00b7 Frontiers in Service Conference 2022",
+  },
+  "speaking.reelTitle": { en: "Speaker Reel", de: "Speaker Reel", nl: "Speaker Reel" },
+  "speaking.reelPlaceholder": { en: "Speaker reel coming soon.", de: "Speaker Reel kommt bald.", nl: "Speaker reel komt binnenkort." },
+  "speaking.bookingCta": {
+    en: "For keynote bookings, please include the event date, expected audience size, and preferred topic in your message.",
+    de: "F\u00fcr Keynote-Buchungen geben Sie bitte Veranstaltungsdatum, erwartete Teilnehmerzahl und gew\u00fcnschtes Thema in Ihrer Nachricht an.",
+    nl: "Voor keynote-boekingen vermeld alstublieft de evenementdatum, verwacht publiek en gewenst onderwerp in uw bericht.",
+  },
+  "speaking.bookingBtn": { en: "Book a Keynote", de: "Keynote buchen", nl: "Keynote boeken" },
+
+  // Consulting
+  "consulting.eyebrow": { en: "Consulting", de: "Beratung", nl: "Advies" },
+  "consulting.title": { en: "Advisory & Training", de: "Beratung & Training", nl: "Advies & Training" },
+  "consulting.intro": {
+    en: "I help organizations navigate the intersection of immersive technologies, AI, and consumer behavior \u2014 translating cutting-edge research into actionable strategy.",
+    de: "Ich unterst\u00fctze Organisationen an der Schnittstelle von immersiven Technologien, KI und Konsumentenverhalten \u2014 und \u00fcbersetze Spitzenforschung in umsetzbare Strategien.",
+    nl: "Ik help organisaties bij het navigeren van immersieve technologie\u00ebn, AI en consumentengedrag \u2014 en vertaal baanbrekend onderzoek naar uitvoerbare strategie.",
+  },
+  "consulting.workshops": { en: "Workshops & Masterclasses", de: "Workshops & Masterclasses", nl: "Workshops & Masterclasses" },
+  "consulting.training": { en: "In-Company Training & Executive Education", de: "Inhouse-Trainings & Executive Education", nl: "Incompany trainingen & Executive Education" },
+  "consulting.advisory": { en: "Strategic Advisory on AR, VR, AI & Digital Transformation", de: "Strategische Beratung zu AR, VR, KI & digitale Transformation", nl: "Strategisch advies over AR, VR, AI & digitale transformatie" },
+  "consulting.clientsTitle": { en: "Past Clients", de: "Bisherige Kunden", nl: "Eerdere klanten" },
+  "consulting.clients": {
+    en: "Allianz \u00b7 APG \u00b7 Dutch Ministry of Infrastructure and Water Management \u00b7 Maastricht University MBA",
+    de: "Allianz \u00b7 APG \u00b7 Niederl\u00e4ndisches Ministerium f\u00fcr Infrastruktur und Wasserwirtschaft \u00b7 Maastricht University MBA",
+    nl: "Allianz \u00b7 APG \u00b7 Ministerie van Infrastructuur en Waterstaat \u00b7 Maastricht University MBA",
+  },
+  "consulting.cta": { en: "Discuss a Project", de: "Projekt besprechen", nl: "Project bespreken" },
+
+  // Testimonials
+  "testimonials.eyebrow": { en: "Testimonials", de: "Referenzen", nl: "Referenties" },
+  "testimonials.title": { en: "What People Say", de: "Was andere sagen", nl: "Wat mensen zeggen" },
+  "testimonials.placeholder": {
+    en: "Testimonials from clients, event organizers, and executive education participants are coming soon.",
+    de: "Referenzen von Kunden, Veranstaltern und Executive-Education-Teilnehmern folgen in K\u00fcrze.",
+    nl: "Referenties van klanten, organisatoren en executive education deelnemers volgen binnenkort.",
+  },
+
   // Contact
   "contact.eyebrow": { en: "Contact", de: "Kontakt", nl: "Contact" },
   "contact.title": { en: "Get in Touch", de: "Kontakt aufnehmen", nl: "Neem contact op" },
@@ -172,6 +223,11 @@ const translations: TranslationMap = {
   "contact.email": { en: "Email", de: "E-Mail", nl: "E-mail" },
   "contact.message": { en: "Message", de: "Nachricht", nl: "Bericht" },
   "contact.messagePlaceholder": { en: "Your message...", de: "Ihre Nachricht...", nl: "Uw bericht..." },
+  "contact.gdpr": {
+    en: "I agree to the <a>Privacy Policy</a> and consent to my data being used to respond to my inquiry.",
+    de: "Ich stimme der <a>Datenschutzerklärung</a> zu und willige ein, dass meine Daten zur Beantwortung meiner Anfrage verwendet werden.",
+    nl: "Ik ga akkoord met het <a>Privacybeleid</a> en geef toestemming dat mijn gegevens worden gebruikt om op mijn verzoek te reageren.",
+  },
   "contact.send": { en: "Send Message", de: "Nachricht senden", nl: "Bericht verzenden" },
   "contact.sending": { en: "Sending...", de: "Wird gesendet...", nl: "Verzenden..." },
   "contact.thanks": { en: "Thank you!", de: "Vielen Dank!", nl: "Dank u!" },

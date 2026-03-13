@@ -166,15 +166,6 @@ const translations: TranslationMap = {
     nl: "Hoe open science, open data en transparante praktijken de wetenschap verbeteren.",
   },
 
-  // Speaking extras
-  "speaking.pastTitle": { en: "Past Engagements", de: "Bisherige Auftritte", nl: "Eerdere optredens" },
-  "speaking.past": {
-    en: "TEDx Maastricht 2024 \u00b7 XR Summit Berlin 2024 \u00b7 TNW Conference Amsterdam 2023 \u00b7 EMAC Annual Conference 2023 \u00b7 Frontiers in Service Conference 2022",
-    de: "TEDx Maastricht 2024 \u00b7 XR Summit Berlin 2024 \u00b7 TNW Conference Amsterdam 2023 \u00b7 EMAC Annual Conference 2023 \u00b7 Frontiers in Service Conference 2022",
-    nl: "TEDx Maastricht 2024 \u00b7 XR Summit Berlin 2024 \u00b7 TNW Conference Amsterdam 2023 \u00b7 EMAC Annual Conference 2023 \u00b7 Frontiers in Service Conference 2022",
-  },
-  "speaking.reelTitle": { en: "Speaker Reel", de: "Speaker Reel", nl: "Speaker Reel" },
-  "speaking.reelPlaceholder": { en: "Speaker reel coming soon.", de: "Speaker Reel kommt bald.", nl: "Speaker reel komt binnenkort." },
   "speaking.bookingCta": {
     en: "For keynote bookings, please include the event date, expected audience size, and preferred topic in your message.",
     de: "F\u00fcr Keynote-Buchungen geben Sie bitte Veranstaltungsdatum, erwartete Teilnehmerzahl und gew\u00fcnschtes Thema in Ihrer Nachricht an.",
@@ -200,15 +191,6 @@ const translations: TranslationMap = {
     nl: "Allianz \u00b7 APG \u00b7 Ministerie van Infrastructuur en Waterstaat \u00b7 Maastricht University MBA",
   },
   "consulting.cta": { en: "Discuss a Project", de: "Projekt besprechen", nl: "Project bespreken" },
-
-  // Testimonials
-  "testimonials.eyebrow": { en: "Testimonials", de: "Referenzen", nl: "Referenties" },
-  "testimonials.title": { en: "What People Say", de: "Was andere sagen", nl: "Wat mensen zeggen" },
-  "testimonials.placeholder": {
-    en: "Testimonials from clients, event organizers, and executive education participants are coming soon.",
-    de: "Referenzen von Kunden, Veranstaltern und Executive-Education-Teilnehmern folgen in K\u00fcrze.",
-    nl: "Referenties van klanten, organisatoren en executive education deelnemers volgen binnenkort.",
-  },
 
   // Contact
   "contact.eyebrow": { en: "Contact", de: "Kontakt", nl: "Contact" },

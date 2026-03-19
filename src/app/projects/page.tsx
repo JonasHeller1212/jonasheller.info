@@ -34,7 +34,7 @@ const projects = [
   {
     titleKey: "projects.scholarfolio.title",
     descKey: "projects.scholarfolio.desc",
-    url: "https://scholarfolio.netlify.app",
+    url: "https://www.scholarfolio.org",
     gradient: "from-violet-500 to-fuchsia-500",
     logoContent: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

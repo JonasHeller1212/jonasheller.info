@@ -230,9 +230,9 @@ const translations: TranslationMap = {
   // Projects page
   "projects.heading": { en: "Projects", de: "Projekte", nl: "Projecten" },
   "projects.intro": {
-    en: "Tools and platforms I've built to support research, education, and business.",
-    de: "Tools und Plattformen, die ich f\u00fcr Forschung, Lehre und Wirtschaft entwickelt habe.",
-    nl: "Tools en platforms die ik heb gebouwd voor onderzoek, onderwijs en het bedrijfsleven.",
+    en: "Tools and platforms I have contributed to or built.",
+    de: "Tools und Plattformen, zu denen ich beigetragen oder die ich entwickelt habe.",
+    nl: "Tools en platforms waaraan ik heb bijgedragen of die ik heb gebouwd.",
   },
   "projects.eyebrow": { en: "Featured", de: "Ausgew\u00e4hlt", nl: "Uitgelicht" },
   "projects.sectionTitle": { en: "Live Products", de: "Live-Produkte", nl: "Live producten" },
@@ -247,6 +247,12 @@ const translations: TranslationMap = {
     en: "Turn any Google Scholar profile into an interactive research portfolio. Visualize citation trends, collaboration networks, and publication timelines with a single URL. Features h-index tracking, co-author graphs, and exportable analytics.",
     de: "Jedes Google-Scholar-Profil in ein interaktives Forschungsportfolio verwandeln. Zitationstrends, Kooperationsnetzwerke und Publikationszeitlinien mit einer einzigen URL visualisieren. Mit h-Index-Tracking, Co-Autoren-Grafiken und exportierbarer Analytik.",
     nl: "Zet elk Google Scholar-profiel om in een interactief onderzoeksportfolio. Visualiseer citatietrends, samenwerkingsnetwerken en publicatietijdlijnen met \u00e9\u00e9n URL. Met h-index-tracking, co-auteurgrafieken en exporteerbare analyses.",
+  },
+  "projects.researchchat.title": { en: "ResearchChatAI", de: "ResearchChatAI", nl: "ResearchChatAI" },
+  "projects.researchchat.desc": {
+    en: "A fully customizable chatbot platform that allows you to set up and conduct studies with sophisticated AI agents without coding experience. Let participants interact with chatbots while maintaining full control over the AI agent, conditions, and participants\u2019 message data.",
+    de: "Eine vollst\u00e4ndig anpassbare Chatbot-Plattform, mit der Sie Studien mit anspruchsvollen KI-Agenten ohne Programmiererfahrung einrichten und durchf\u00fchren k\u00f6nnen. Lassen Sie Teilnehmer mit Chatbots interagieren und behalten Sie die volle Kontrolle \u00fcber den KI-Agenten, Bedingungen und Nachrichtendaten.",
+    nl: "Een volledig aanpasbaar chatbotplatform waarmee u studies kunt opzetten en uitvoeren met geavanceerde AI-agenten zonder programmeerervaring. Laat deelnemers interacteren met chatbots terwijl u volledige controle behoudt over de AI-agent, condities en berichtgegevens.",
   },
   "projects.back": { en: "Back to Home", de: "Zur\u00fcck zur Startseite", nl: "Terug naar home" },
 

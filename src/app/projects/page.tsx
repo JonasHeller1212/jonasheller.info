@@ -45,6 +45,20 @@ const projects = [
     nameDisplay: "ScholarFolio",
     tags: ["React", "TypeScript", "Supabase", "D3.js", "Stripe", "SerpAPI"],
   },
+  {
+    titleKey: "projects.researchchat.title",
+    descKey: "projects.researchchat.desc",
+    url: "https://www.researchchatai.com",
+    gradient: "from-yellow-400 to-amber-500",
+    logoContent: (
+      <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+        <rect width="40" height="40" rx="8" fill="#18191d" />
+        <text x="20" y="26" textAnchor="middle" fontFamily="sans-serif" fontWeight="bold" fontSize="16" fill="#f6e760">RC</text>
+      </svg>
+    ),
+    nameDisplay: "ResearchChatAI",
+    tags: ["Chatbot Platform", "AI Agents", "No-Code", "Research Studies"],
+  },
 ];
 
 function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {

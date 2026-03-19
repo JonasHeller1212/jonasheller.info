@@ -35,7 +35,7 @@ const projects = [
     titleKey: "projects.scholarfolio.title",
     descKey: "projects.scholarfolio.desc",
     url: "https://www.scholarfolio.org",
-    gradient: "from-violet-500 to-fuchsia-500",
+    gradient: "from-teal-600 to-emerald-500",
     logoContent: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <path d="M6 10C6 8 8 7 10 7C12 7 14 8 16 9C18 8 20 7 22 7C24 7 26 8 26 10V23C26 24 25 25 23 25C21 25 19 24 16 23C13 24 11 25 9 25C7 25 6 24 6 23V10Z" stroke="#2d7d7d" strokeWidth="1.8" fill="none"/>
@@ -51,11 +51,13 @@ const projects = [
     titleKey: "projects.researchchat.title",
     descKey: "projects.researchchat.desc",
     url: "https://www.researchchatai.com",
-    gradient: "from-yellow-400 to-amber-500",
+    gradient: "from-pink-400 to-sky-400",
     logoContent: (
-      <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
-        <rect width="40" height="40" rx="8" fill="#18191d" />
-        <text x="20" y="26" textAnchor="middle" fontFamily="sans-serif" fontWeight="bold" fontSize="16" fill="#f6e760">RC</text>
+      <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+        <circle cx="10" cy="10" r="8" fill="#b0b0c0" />
+        <circle cx="26" cy="10" r="8" fill="#f06080" />
+        <circle cx="10" cy="26" r="8" fill="#f0b020" />
+        <circle cx="26" cy="26" r="8" fill="#66d1fc" />
       </svg>
     ),
     nameDisplay: "ResearchChatAI",

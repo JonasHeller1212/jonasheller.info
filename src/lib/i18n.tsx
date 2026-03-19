@@ -230,9 +230,9 @@ const translations: TranslationMap = {
   // Projects page
   "projects.heading": { en: "Projects", de: "Projekte", nl: "Projecten" },
   "projects.intro": {
-    en: "Tools and platforms I have contributed to or built.",
-    de: "Tools und Plattformen, zu denen ich beigetragen oder die ich entwickelt habe.",
-    nl: "Tools en platforms waaraan ik heb bijgedragen of die ik heb gebouwd.",
+    en: "Experimental tools and platforms I have contributed to or built \u2014 focused on research, education, and MBA workshops. None of these are commercial products. If you have questions or suggestions, feel free to reach out via the contact page or through the project websites directly.",
+    de: "Experimentelle Tools und Plattformen, zu denen ich beigetragen oder die ich entwickelt habe \u2014 mit Fokus auf Forschung, Lehre und MBA-Workshops. Keines davon ist ein kommerzielles Produkt. Bei Fragen oder Anregungen k\u00f6nnen Sie mich gerne \u00fcber die Kontaktseite oder direkt \u00fcber die Projektwebsites erreichen.",
+    nl: "Experimentele tools en platforms waaraan ik heb bijgedragen of die ik heb gebouwd \u2014 gericht op onderzoek, onderwijs en MBA-workshops. Geen van deze zijn commerci\u00eble producten. Bij vragen of suggesties kunt u contact opnemen via de contactpagina of rechtstreeks via de projectwebsites.",
   },
   "projects.eyebrow": { en: "Featured", de: "Ausgew\u00e4hlt", nl: "Uitgelicht" },
   "projects.sectionTitle": { en: "Live Products", de: "Live-Produkte", nl: "Live producten" },

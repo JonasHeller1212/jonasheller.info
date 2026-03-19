@@ -24,6 +24,7 @@ const translations: TranslationMap = {
   "nav.research": { en: "Research", de: "Forschung", nl: "Onderzoek" },
   "nav.publications": { en: "Publications", de: "Publikationen", nl: "Publicaties" },
   "nav.speaking": { en: "Speaking", de: "Vorträge", nl: "Lezingen" },
+  "nav.projects": { en: "Projects", de: "Projekte", nl: "Projecten" },
   "nav.cv": { en: "CV", de: "Lebenslauf", nl: "CV" },
   "nav.contact": { en: "Contact", de: "Kontakt", nl: "Contact" },
 
@@ -225,6 +226,29 @@ const translations: TranslationMap = {
     nl: "Er is iets misgegaan. Probeer het opnieuw.",
   },
   "contact.office": { en: "Office", de: "Büro", nl: "Kantoor" },
+
+  // Projects page
+  "projects.heading": { en: "Projects", de: "Projekte", nl: "Projecten" },
+  "projects.intro": {
+    en: "Tools and platforms I've built to support research, education, and business.",
+    de: "Tools und Plattformen, die ich f\u00fcr Forschung, Lehre und Wirtschaft entwickelt habe.",
+    nl: "Tools en platforms die ik heb gebouwd voor onderzoek, onderwijs en het bedrijfsleven.",
+  },
+  "projects.eyebrow": { en: "Featured", de: "Ausgew\u00e4hlt", nl: "Uitgelicht" },
+  "projects.sectionTitle": { en: "Live Products", de: "Live-Produkte", nl: "Live producten" },
+  "projects.ai2ai.title": { en: "AI2AI-Chat", de: "AI2AI-Chat", nl: "AI2AI-Chat" },
+  "projects.ai2ai.desc": {
+    en: "Put two AI models in conversation with each other. Configure GPT, Claude, Gemini, or Mistral with independent prompts, then watch them negotiate, debate, or brainstorm \u2014 and export everything as CSV. Used in research, MBA workshops, and business strategy testing.",
+    de: "Zwei KI-Modelle miteinander ins Gespr\u00e4ch bringen. GPT, Claude, Gemini oder Mistral mit eigenen Prompts konfigurieren, dann Verhandlungen, Debatten oder Brainstormings beobachten \u2014 und alles als CSV exportieren. Eingesetzt in Forschung, MBA-Workshops und Strategietests.",
+    nl: "Laat twee AI-modellen met elkaar in gesprek gaan. Configureer GPT, Claude, Gemini of Mistral met onafhankelijke prompts, kijk hoe ze onderhandelen, debatteren of brainstormen \u2014 en exporteer alles als CSV. Gebruikt in onderzoek, MBA-workshops en strategietests.",
+  },
+  "projects.scholarfolio.title": { en: "ScholarFolio", de: "ScholarFolio", nl: "ScholarFolio" },
+  "projects.scholarfolio.desc": {
+    en: "Turn any Google Scholar profile into an interactive research portfolio. Visualize citation trends, collaboration networks, and publication timelines with a single URL. Features h-index tracking, co-author graphs, and exportable analytics.",
+    de: "Jedes Google-Scholar-Profil in ein interaktives Forschungsportfolio verwandeln. Zitationstrends, Kooperationsnetzwerke und Publikationszeitlinien mit einer einzigen URL visualisieren. Mit h-Index-Tracking, Co-Autoren-Grafiken und exportierbarer Analytik.",
+    nl: "Zet elk Google Scholar-profiel om in een interactief onderzoeksportfolio. Visualiseer citatietrends, samenwerkingsnetwerken en publicatietijdlijnen met \u00e9\u00e9n URL. Met h-index-tracking, co-auteurgrafieken en exporteerbare analyses.",
+  },
+  "projects.back": { en: "Back to Home", de: "Zur\u00fcck zur Startseite", nl: "Terug naar home" },
 
   // Footer
   "footer.rights": { en: "All rights reserved.", de: "Alle Rechte vorbehalten.", nl: "Alle rechten voorbehouden." },
